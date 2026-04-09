@@ -1,0 +1,2409 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///Users/micaelamartinez/Downloads/Flores_Avellaneda_v4.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Flores &amp; Avellaneda — Guía de Shopping</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Flores &amp; Avellaneda — Guía de Shopping_files/css2" rel="stylesheet">
+<style>
+:root {
+  --plum: #857d8f;
+  --plum-deep: #5c5368;
+  --plum-light: #ede9f2;
+  --accent: #b347d9;
+  --accent-dark: #8b24b3;
+  --accent-light: #f3e0ff;
+  --electric: #7c3aed;
+  --teal: #0d9488;
+  --teal-light: #ccfbf1;
+  --amber: #d97706;
+  --amber-light: #fef3c7;
+  --coral: #dc2626;
+  --coral-light: #fee2e2;
+  --green: #16a34a;
+  --green-light: #dcfce7;
+  --text: #1a1423;
+  --text-soft: #4a4155;
+  --text-muted: #857d8f;
+  --bg: #f8f6fb;
+  --card: #ffffff;
+  --border: rgba(133,125,143,0.15);
+  --border-strong: rgba(133,125,143,0.3);
+  --shadow: 0 2px 16px rgba(92,83,104,0.08);
+  --shadow-lg: 0 8px 40px rgba(92,83,104,0.18);
+  --r: 18px;
+  --r-sm: 10px;
+  --r-pill: 999px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* ——— HERO ——— */
+.hero{
+  background:linear-gradient(135deg,#2d1b4e 0%,#4a2070 40%,#6b2fa0 100%);
+  padding:2.5rem 1.25rem 2rem;position:relative;overflow:hidden;
+}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:260px;height:260px;
+  background:radial-gradient(circle,rgba(179,71,217,0.35) 0%,transparent 70%);border-radius:50%;}
+.hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:180px;height:180px;
+  background:radial-gradient(circle,rgba(124,58,237,0.3) 0%,transparent 70%);border-radius:50%;}
+.hero-inner{position:relative;z-index:1}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:var(--r-pill);padding:5px 14px;
+  font-size:11px;font-weight:600;letter-spacing:0.1em;color:rgba(255,255,255,0.9);
+  text-transform:uppercase;margin-bottom:12px;
+}
+.hero-title{
+  font-family:'Montserrat',sans-serif;font-size:clamp(28px,7vw,42px);font-weight:800;line-height:1.1;
+  color:#fff;margin-bottom:8px;
+}
+.hero-title em{font-style:italic;color:#e0a8ff}
+.hero-sub{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.65;max-width:380px;margin-bottom:20px}
+.hero-stats{display:flex;gap:20px;flex-wrap:wrap}
+.hero-stat{text-align:center;background:rgba(255,255,255,0.1);border-radius:12px;padding:10px 16px;backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.15)}
+.hero-stat strong{display:block;font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#e0a8ff}
+.hero-stat span{font-size:10px;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.08em}
+
+/* ——— NOTIF BELL ——— */
+.notif-btn{
+  position:absolute;top:1.25rem;right:1.25rem;z-index:10;
+  background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);
+  border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:18px;backdrop-filter:blur(8px);transition:all 0.2s;
+}
+.notif-btn:hover{background:rgba(255,255,255,0.25)}
+.notif-badge{
+  position:absolute;top:-4px;right:-4px;
+  background:var(--accent);color:white;border-radius:50%;width:16px;height:16px;
+  font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+
+/* ——— TAB NAV ——— */
+.tab-nav{
+  display:flex;background:white;border-bottom:2px solid var(--border);
+  position:sticky;top:0;z-index:100;overflow-x:auto;scrollbar-width:none;
+  box-shadow:0 2px 12px rgba(92,83,104,0.07);
+}
+.tab-nav::-webkit-scrollbar{display:none}
+.tab-btn{
+  padding:14px 20px;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.04em;
+  color:var(--text-muted);border:none;background:transparent;cursor:pointer;
+  white-space:nowrap;border-bottom:2.5px solid transparent;margin-bottom:-2px;
+  transition:all 0.2s;flex-shrink:0;letter-spacing:0.03em;
+}
+.tab-btn.active{color:var(--accent-dark);border-bottom-color:var(--accent);font-weight:700}
+.tab-btn:hover{color:var(--text-soft)}
+
+/* ——— VIEWS ——— */
+.view{display:none;animation:fadeIn 0.25s ease}
+.view.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+/* ——— SEARCH + FILTERS ——— */
+.toolbar{padding:1rem 1.25rem;display:flex;flex-direction:column;gap:10px}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:100%;height:44px;padding:0 14px 0 42px;
+  border:2px solid var(--border);border-radius:var(--r-sm);
+  font-size:14px;font-family:inherit;color:var(--text);background:white;
+  transition:border-color 0.2s,box-shadow 0.2s;
+}
+.search-wrap input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
+.search-wrap .icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:16px}
+.filter-row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.filter-row::-webkit-scrollbar{display:none}
+.chip{
+  padding:6px 14px;border:1.5px solid var(--border);border-radius:var(--r-pill);
+  font-size:12px;font-weight:500;cursor:pointer;white-space:nowrap;
+  background:white;color:var(--text-soft);transition:all 0.15s;
+}
+.chip.on{background:var(--accent-light);color:var(--accent-dark);border-color:var(--accent);font-weight:600}
+.chip:hover{border-color:var(--accent)}
+
+.sort-bar{display:flex;justify-content:space-between;align-items:center;padding:0 1.25rem 0.75rem}
+.sort-bar .count{font-size:12px;color:var(--text-muted);font-weight:500}
+.sort-bar select{
+  font-size:12px;font-family:inherit;padding:6px 12px;
+  border:1.5px solid var(--border);border-radius:var(--r-sm);
+  background:white;color:var(--text-soft);cursor:pointer;
+}
+.sort-bar select:focus{outline:none;border-color:var(--accent)}
+
+/* ——— CAT PILLS ——— */
+.cat-scroll{display:flex;gap:8px;padding:0 1.25rem 0.75rem;overflow-x:auto;scrollbar-width:none}
+.cat-scroll::-webkit-scrollbar{display:none}
+.cat-pill{
+  padding:8px 18px;border:2px solid var(--border);border-radius:var(--r-pill);
+  font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;cursor:pointer;
+  white-space:nowrap;background:white;color:var(--text-soft);transition:all 0.2s;flex-shrink:0;
+  letter-spacing:0.03em;
+}
+.cat-pill.on{
+  background:linear-gradient(135deg,var(--plum-deep) 0%,var(--accent-dark) 100%);
+  color:white;border-color:transparent;box-shadow:0 4px 14px rgba(179,71,217,0.35);
+}
+
+/* ——— LOCAL CARDS ——— */
+.cards-list{padding:0 1.25rem;display:flex;flex-direction:column;gap:16px;padding-bottom:2rem}
+.local-card{
+  background:linear-gradient(145deg,#f5f0ff 0%,#ede7fa 100%);border-radius:var(--r);border:2px solid var(--border);
+  box-shadow:var(--shadow);overflow:hidden;cursor:pointer;
+  transition:transform 0.18s,box-shadow 0.18s,border-color 0.18s,background 0.18s;
+}
+.local-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--accent);background:linear-gradient(145deg,#ebe2ff 0%,#d8caff 100%)}
+.card-header{padding:16px 18px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card-name{font-family:'Montserrat',sans-serif;font-size:17px;font-weight:700;color:var(--text);line-height:1.2}
+.card-sub{font-size:11px;color:var(--text-muted);margin-top:3px}
+.score-ring{
+  flex-shrink:0;width:46px;height:46px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;line-height:1;
+}
+.score-ring span{font-size:7px;font-weight:400;opacity:0.7;font-family:'Montserrat',sans-serif}
+.score-high{background:var(--green-light);color:var(--green);border:2px solid var(--green)}
+.score-mid{background:var(--amber-light);color:var(--amber);border:2px solid var(--amber)}
+.score-low{background:var(--coral-light);color:var(--coral);border:2px solid var(--coral)}
+.score-none{background:var(--plum-light);color:var(--plum);border:2px solid var(--border-strong)}
+
+.card-tags{display:flex;gap:5px;flex-wrap:wrap;padding:10px 18px 0}
+.tag{padding:4px 10px;border-radius:var(--r-pill);font-size:11px;font-weight:600;letter-spacing:0.02em}
+.tag-cat{background:var(--accent-light);color:var(--accent-dark)}
+.tag-style{background:var(--plum-light);color:var(--plum-deep)}
+.tag-price{background:var(--amber-light);color:var(--amber)}
+.tag-min{background:var(--teal-light);color:var(--teal)}
+.tag-warn{background:var(--coral-light);color:var(--coral)}
+
+.card-info{display:flex;gap:12px;padding:10px 18px;flex-wrap:wrap}
+.info-item{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--text-soft)}
+.info-item .ico{font-size:13px}
+.info-item a{color:var(--accent-dark);font-weight:600;text-decoration:none}
+.info-item a:hover{text-decoration:underline}
+
+.card-footer{
+  border-top:1.5px solid var(--border);padding:12px 18px;
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  background:linear-gradient(to right,var(--bg),white);
+}
+.card-note{font-size:12px;color:var(--text-soft);flex:1;line-height:1.5}
+.btn-detail{
+  font-size:12px;color:white;border:none;
+  background:linear-gradient(135deg,var(--plum-deep),var(--accent-dark));
+  border-radius:var(--r-sm);padding:7px 14px;
+  cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:600;white-space:nowrap;
+  transition:all 0.15s;box-shadow:0 2px 8px rgba(139,36,179,0.25);
+}
+.btn-detail:hover{box-shadow:0 4px 16px rgba(139,36,179,0.4);transform:translateY(-1px)}
+
+.empty-state{text-align:center;padding:3rem 1.25rem;color:var(--text-muted)}
+.empty-state .big{font-size:48px;margin-bottom:12px}
+.empty-state p{font-size:14px;line-height:1.6}
+
+/* Google Maps preview strip */
+.maps-preview{
+  margin:0 18px 12px;border-radius:var(--r-sm);overflow:hidden;
+  border:1.5px solid var(--border);
+  background:var(--plum-light);height:90px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;color:var(--text-muted);cursor:pointer;gap:6px;
+  transition:all 0.15s;
+}
+.maps-preview:hover{border-color:var(--accent);background:var(--accent-light);color:var(--accent-dark)}
+
+/* ——— MODAL ——— */
+.overlay{
+  display:none;position:fixed;inset:0;background:rgba(26,20,35,0.65);
+  z-index:200;backdrop-filter:blur(6px);
+  align-items:flex-end;justify-content:center;
+}
+.overlay.open{display:flex;animation:overlayIn 0.2s ease}
+@keyframes overlayIn{from{opacity:0}to{opacity:1}}
+.modal{
+  background:white;border-radius:24px 24px 0 0;width:100%;max-width:680px;
+  max-height:92vh;overflow-y:auto;
+  animation:slideUp 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  padding-bottom:env(safe-area-inset-bottom,16px);
+}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.modal-handle{width:40px;height:4px;background:var(--border-strong);border-radius:2px;margin:12px auto 0}
+.modal-hero{
+  padding:18px 22px 14px;
+  background:linear-gradient(135deg,#2d1b4e 0%,#6b2fa0 100%);
+  display:flex;justify-content:space-between;align-items:flex-start;
+}
+.modal-name{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#fff;line-height:1.2}
+.modal-cat{font-size:12px;color:rgba(255,255,255,0.65);margin-top:4px}
+.modal-close{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);
+  font-size:18px;cursor:pointer;color:white;padding:6px 10px;line-height:1;
+  border-radius:8px;backdrop-filter:blur(8px);}
+.modal-score-big{
+  width:56px;height:56px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;flex-direction:column;font-family:'Montserrat',sans-serif;
+  font-weight:800;font-size:20px;line-height:1;flex-shrink:0;
+  background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.3);color:white;
+}
+.modal-score-big span{font-size:9px;font-weight:400;font-family:'Montserrat',sans-serif;opacity:0.8}
+
+/* Modal sections */
+.modal-body{padding:18px 22px}
+.modal-section{margin-bottom:22px}
+.modal-section-title{
+  font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.1em;
+  text-transform:uppercase;color:var(--accent-dark);margin-bottom:12px;
+  display:flex;align-items:center;gap:6px;padding-bottom:8px;
+  border-bottom:2px solid var(--accent-light);
+}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.detail-item{background:var(--bg);border-radius:var(--r-sm);padding:11px 14px;border:1.5px solid var(--border)}
+.detail-label{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;font-weight:600}
+.detail-value{font-size:13px;color:var(--text);font-weight:500;line-height:1.4}
+.detail-value a{color:var(--accent-dark);font-weight:600;text-decoration:none}
+.detail-value a:hover{text-decoration:underline}
+.detail-item.full{grid-column:1/-1}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap}
+
+/* Maps embed in modal */
+.modal-maps{
+  border-radius:var(--r-sm);overflow:hidden;border:1.5px solid var(--border);
+  background:var(--plum-light);height:130px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:6px;font-size:13px;color:var(--text-soft);cursor:pointer;
+  transition:all 0.15s;text-decoration:none;
+}
+.modal-maps:hover{border-color:var(--accent);background:var(--accent-light);color:var(--accent-dark)}
+.modal-maps .maps-icon{font-size:28px}
+
+/* ——— REVIEWS TAB ——— */
+.reviews-tab{
+  display:flex;gap:0;margin-bottom:16px;border:2px solid var(--border);border-radius:var(--r-sm);overflow:hidden;
+}
+.rtab-btn{
+  flex:1;padding:9px;border:none;background:white;color:var(--text-muted);
+  font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;cursor:pointer;
+  transition:all 0.15s;letter-spacing:0.03em;
+}
+.rtab-btn.on{background:linear-gradient(135deg,var(--plum-deep),var(--accent-dark));color:white}
+
+/* Comments */
+.comments-list{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+.comment-bubble{
+  background:var(--bg);border-radius:var(--r-sm);padding:12px 14px;
+  border-left:3px solid var(--accent);border:1.5px solid var(--border);border-left-width:3px;
+  border-left-color:var(--accent);
+}
+.comment-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.comment-author{font-size:13px;font-weight:700;color:var(--text);font-family:'Montserrat',sans-serif}
+.comment-score{font-size:12px;color:var(--accent-dark);font-weight:700;
+  background:var(--accent-light);padding:2px 8px;border-radius:var(--r-pill);}
+.comment-date{font-size:10px;color:var(--text-muted)}
+.comment-bought{font-size:11px;color:var(--teal);font-weight:600;background:var(--teal-light);
+  padding:2px 8px;border-radius:var(--r-pill);margin-top:4px;display:inline-block;}
+.comment-text{font-size:13px;color:var(--text-soft);line-height:1.55;margin-top:6px}
+.show-more-reviews{
+  text-align:center;padding:8px;font-size:13px;color:var(--accent-dark);
+  font-weight:600;cursor:pointer;border:1.5px dashed var(--border);
+  border-radius:var(--r-sm);transition:all 0.15s;
+}
+.show-more-reviews:hover{background:var(--accent-light);border-color:var(--accent)}
+
+/* Review form */
+.comment-form{display:flex;flex-direction:column;gap:10px;background:var(--bg);border-radius:var(--r-sm);padding:14px;border:1.5px solid var(--border)}
+.comment-form input,.comment-form textarea,.comment-form select{
+  width:100%;padding:10px 13px;border:1.5px solid var(--border);
+  border-radius:var(--r-sm);font-size:13px;font-family:inherit;color:var(--text);
+  background:white;resize:none;transition:border-color 0.2s;
+}
+.comment-form input:focus,.comment-form textarea:focus,.comment-form select:focus{
+  outline:none;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-light);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.field-label{font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:4px}
+.score-pick{display:flex;gap:5px;flex-wrap:wrap}
+.score-opt{
+  padding:5px 12px;border:1.5px solid var(--border);border-radius:var(--r-pill);
+  font-size:12px;font-weight:600;cursor:pointer;background:white;color:var(--text-soft);
+  transition:all 0.15s;font-family:inherit;
+}
+.score-opt.sel{background:var(--accent-dark);color:white;border-color:var(--accent-dark);}
+.btn-submit{
+  background:linear-gradient(135deg,var(--plum-deep) 0%,var(--accent-dark) 100%);
+  color:white;border:none;border-radius:var(--r-sm);padding:12px;
+  font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;cursor:pointer;
+  transition:all 0.15s;width:100%;box-shadow:0 4px 14px rgba(139,36,179,0.3);
+}
+.btn-submit:hover{box-shadow:0 6px 20px rgba(139,36,179,0.45);transform:translateY(-1px)}
+
+/* Edit form */
+.edit-form{display:flex;flex-direction:column;gap:10px;background:var(--bg);border-radius:var(--r-sm);padding:14px;border:1.5px solid var(--border)}
+.edit-form label{font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em}
+.edit-form input,.edit-form select,.edit-form textarea{
+  width:100%;padding:9px 12px;border:1.5px solid var(--border);
+  border-radius:var(--r-sm);font-size:13px;font-family:inherit;color:var(--text);background:white;
+}
+.edit-form input:focus,.edit-form select:focus,.edit-form textarea:focus{outline:none;border-color:var(--accent)}
+.edit-form textarea{resize:vertical;min-height:60px}
+.btn-save{
+  background:var(--accent-dark);color:white;border:none;border-radius:var(--r-sm);
+  padding:11px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;cursor:pointer;width:100%;
+}
+.btn-cancel{
+  background:none;border:1.5px solid var(--border);border-radius:var(--r-sm);
+  padding:10px;font-size:14px;font-weight:500;font-family:inherit;cursor:pointer;
+  width:100%;color:var(--text-soft);
+}
+.btn-edit-link{
+  font-size:12px;color:var(--accent-dark);font-weight:600;cursor:pointer;
+  background:none;border:none;font-family:inherit;padding:0;
+  text-decoration:underline;opacity:0.8;
+}
+.btn-edit-link:hover{opacity:1}
+
+/* ——— ADD LOCAL FORM ——— */
+.add-view{padding:1.25rem}
+.add-view h2{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:800;margin-bottom:6px;color:var(--text)}
+.add-view p{font-size:13px;color:var(--text-soft);margin-bottom:20px;line-height:1.6}
+.add-form{display:flex;flex-direction:column;gap:14px}
+.add-form input,.add-form select,.add-form textarea{
+  width:100%;padding:11px 14px;border:2px solid var(--border);
+  border-radius:var(--r-sm);font-size:14px;font-family:inherit;color:var(--text);background:white;
+  transition:border-color 0.2s;
+}
+.add-form input:focus,.add-form select:focus,.add-form textarea:focus{
+  outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light);}
+.add-form textarea{resize:vertical;min-height:70px}
+.req-star{color:var(--accent-dark)}
+.subcat-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.subcat-check{
+  padding:6px 14px;border:1.5px solid var(--border);border-radius:var(--r-pill);
+  font-size:12px;font-weight:500;cursor:pointer;background:white;color:var(--text-soft);
+  transition:all 0.15s;font-family:inherit;
+}
+.subcat-check.on{background:var(--accent-light);color:var(--accent-dark);border-color:var(--accent);font-weight:600}
+.btn-add-submit{
+  background:linear-gradient(135deg,var(--plum-deep) 0%,var(--accent-dark) 100%);
+  color:white;border:none;border-radius:var(--r-sm);padding:15px;
+  font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;cursor:pointer;
+  width:100%;margin-top:8px;letter-spacing:0.02em;
+  box-shadow:0 4px 18px rgba(139,36,179,0.3);transition:all 0.15s;
+}
+.btn-add-submit:hover{box-shadow:0 6px 24px rgba(139,36,179,0.45);transform:translateY(-1px)}
+.pending-banner{
+  background:var(--amber-light);border:2px solid var(--amber);
+  border-radius:var(--r-sm);padding:14px 18px;font-size:13px;
+  color:var(--amber);display:none;margin-bottom:12px;line-height:1.5;
+  font-weight:500;
+}
+.pending-banner strong{display:block;font-family:'Montserrat',sans-serif;font-size:14px;margin-bottom:4px}
+.pending-banner.show{display:block;animation:fadeIn 0.3s ease}
+
+/* ——— LOGÍSTICA VIEW ——— */
+.log-view{padding:1.25rem}
+.log-view h2{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:800;margin-bottom:6px;color:var(--text)}
+.log-view p{font-size:13px;color:var(--text-soft);margin-bottom:20px;line-height:1.6}
+
+.log-top-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.log-form input,.log-form select{
+  width:100%;padding:11px 14px;border:2px solid var(--border);
+  border-radius:var(--r-sm);font-size:14px;font-family:inherit;color:var(--text);background:white;
+  transition:border-color 0.2s;
+}
+.log-form input:focus,.log-form select:focus{outline:none;border-color:var(--accent)}
+.date-input-wrap{grid-column:1/-1}
+
+/* Picker list */
+.picker-search-wrap{margin-bottom:10px;position:relative}
+.picker-search-wrap input{
+  width:100%;padding:9px 12px 9px 36px;border:1.5px solid var(--border);
+  border-radius:var(--r-sm);font-size:13px;font-family:inherit;
+}
+.picker-search-wrap input:focus{outline:none;border-color:var(--accent)}
+.picker-search-wrap .ps-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--text-muted)}
+.local-picker{
+  display:flex;flex-direction:column;gap:4px;max-height:260px;overflow-y:auto;
+  border:2px solid var(--border);border-radius:var(--r-sm);padding:10px;
+  background:white;
+}
+.local-picker::-webkit-scrollbar{width:4px}
+.local-picker::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:2px}
+.local-picker-item{
+  display:flex;align-items:center;gap:10px;padding:8px 6px;
+  border-radius:var(--r-sm);cursor:pointer;transition:background 0.15s;
+}
+.local-picker-item:hover{background:var(--bg)}
+.picker-priority{
+  flex-shrink:0;padding:4px 10px;border-radius:var(--r-pill);font-size:11px;font-weight:700;
+  min-width:60px;text-align:center;font-family:'Montserrat',sans-serif;
+}
+.pri-off{background:var(--bg);color:var(--text-muted);border:1.5px solid var(--border)}
+.pri-must{background:var(--accent-dark);color:white;border:1.5px solid var(--accent-dark)}
+.pri-ifgo{background:var(--amber-light);color:var(--amber);border:1.5px solid var(--amber)}
+.picker-name{font-size:13px;font-weight:600;color:var(--text)}
+.picker-addr{font-size:11px;color:var(--text-muted)}
+.picker-time{
+  flex-shrink:0;font-size:11px;color:var(--plum);font-weight:600;
+  background:var(--plum-light);padding:3px 8px;border-radius:var(--r-pill);
+}
+
+.log-date-row{display:flex;align-items:center;gap:10px;margin-bottom:16px;
+  background:var(--accent-light);border-radius:var(--r-sm);padding:12px 14px;border:1.5px solid var(--border)}
+.log-date-row .ldr-label{font-size:12px;font-weight:600;color:var(--accent-dark);font-family:'Montserrat',sans-serif}
+.log-date-row input[type=date]{
+  border:1.5px solid var(--accent);border-radius:var(--r-sm);padding:7px 10px;
+  font-size:13px;font-family:inherit;color:var(--text);background:white;flex:1;
+}
+
+.btn-build-route{
+  background:linear-gradient(135deg,var(--plum-deep),var(--accent-dark));
+  color:white;border:none;border-radius:var(--r-sm);padding:14px;
+  font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;cursor:pointer;
+  width:100%;margin-top:12px;box-shadow:0 4px 16px rgba(139,36,179,0.3);transition:all 0.15s;
+}
+.btn-build-route:hover{box-shadow:0 6px 24px rgba(139,36,179,0.45);transform:translateY(-1px)}
+
+/* Route result panel */
+.route-overlay{
+  display:none;position:fixed;inset:0;background:rgba(26,20,35,0.7);
+  z-index:300;backdrop-filter:blur(6px);
+  align-items:flex-end;justify-content:center;
+}
+.route-overlay.open{display:flex;animation:overlayIn 0.2s ease}
+.route-panel{
+  background:white;border-radius:24px 24px 0 0;width:100%;max-width:680px;
+  max-height:88vh;overflow-y:auto;
+  animation:slideUp 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  padding:20px 20px env(safe-area-inset-bottom,20px);
+}
+.route-panel h3{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;margin-bottom:6px;color:var(--text)}
+.route-panel .route-date{font-size:13px;color:var(--text-muted);margin-bottom:18px}
+.route-step{
+  display:flex;align-items:flex-start;gap:14px;padding:14px 0;
+  border-bottom:1.5px solid var(--border);
+}
+.route-step:last-of-type{border-bottom:none}
+.step-num{
+  flex-shrink:0;width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,var(--plum-deep),var(--accent-dark));
+  color:white;display:flex;align-items:center;justify-content:center;
+  font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;
+}
+.step-name{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;color:var(--text)}
+.step-addr{font-size:12px;color:var(--text-muted);margin-top:2px}
+.step-time{font-size:12px;color:var(--accent-dark);font-weight:600;margin-top:4px}
+.step-badge{font-size:11px;font-weight:700;border-radius:var(--r-pill);padding:4px 10px;flex-shrink:0}
+.step-must{background:var(--accent-dark);color:white}
+.step-if{background:var(--amber-light);color:var(--amber)}
+.route-tip{
+  margin-top:16px;background:var(--plum-light);border-radius:var(--r-sm);
+  padding:14px;font-size:13px;color:var(--text-soft);line-height:1.55;
+  border-left:3px solid var(--accent);
+}
+.btn-close-route{
+  width:100%;margin-top:16px;padding:12px;border-radius:var(--r-sm);
+  background:var(--bg);border:1.5px solid var(--border);font-family:'Montserrat',sans-serif;
+  font-size:14px;font-weight:600;cursor:pointer;color:var(--text-soft);
+}
+
+/* ——— NOTIF PANEL ——— */
+.notif-overlay{
+  display:none;position:fixed;inset:0;background:rgba(26,20,35,0.7);
+  z-index:400;backdrop-filter:blur(6px);
+  align-items:flex-end;justify-content:center;
+}
+.notif-overlay.open{display:flex;animation:overlayIn 0.2s ease}
+.notif-panel{
+  background:white;border-radius:24px 24px 0 0;width:100%;max-width:680px;
+  max-height:75vh;overflow-y:auto;
+  animation:slideUp 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  padding:20px 20px env(safe-area-inset-bottom,20px);
+}
+.notif-panel h3{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;margin-bottom:16px;color:var(--text)}
+.notif-item{
+  display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);
+  align-items:flex-start;
+}
+.notif-icon{font-size:22px;flex-shrink:0;margin-top:2px}
+.notif-content{flex:1}
+.notif-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px}
+.notif-sub{font-size:12px;color:var(--text-muted)}
+.notif-time{font-size:10px;color:var(--text-muted);flex-shrink:0}
+.notif-empty{text-align:center;padding:2rem;color:var(--text-muted);font-size:13px}
+.btn-notif-close{
+  width:100%;margin-top:16px;padding:12px;border-radius:var(--r-sm);
+  background:var(--bg);border:1.5px solid var(--border);font-family:'Montserrat',sans-serif;
+  font-size:14px;font-weight:600;cursor:pointer;color:var(--text-soft);
+}
+
+/* Pending request panel (admin) */
+.pending-panel{
+  background:var(--amber-light);border:2px solid var(--amber);
+  border-radius:var(--r);padding:16px;margin:1.25rem 1.25rem 0;
+}
+.pending-panel h4{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;margin-bottom:8px;color:var(--amber)}
+.pending-item{background:white;border-radius:var(--r-sm);padding:10px 12px;margin-bottom:8px;border:1px solid var(--amber)}
+.pending-item-name{font-weight:600;font-size:13px;color:var(--text)}
+.pending-btns{display:flex;gap:6px;margin-top:8px}
+.btn-approve{background:var(--green);color:white;border:none;border-radius:6px;
+  padding:5px 12px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
+.btn-reject{background:var(--coral);color:white;border:none;border-radius:6px;
+  padding:5px 12px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
+
+/* ——— TOAST ——— */
+#adminToast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);
+  background:#2d1b4e;color:white;padding:10px 22px;border-radius:30px;
+  font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;
+  z-index:9999;opacity:0;transition:opacity 0.3s;pointer-events:none;
+  box-shadow:0 4px 20px rgba(45,27,78,0.4);white-space:nowrap;
+}
+
+/* ——— RESPONSIVE DESKTOP ——— */
+@media(min-width:768px){
+  .cards-list{
+    display:grid !important;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+  }
+  .hero{padding:3rem 2.5rem 2.5rem}
+  .hero-title{font-size:48px}
+  .toolbar{padding:1.25rem 2rem}
+  .sort-bar{padding:0 2rem 0.75rem}
+  .cat-scroll{padding:0 2rem 0.75rem}
+  .cards-list{padding:0 2rem;padding-bottom:2.5rem}
+  .add-view,.log-view{padding:1.5rem 2rem;max-width:680px;margin:0 auto}
+  .log-top-grid{grid-template-columns:1fr 1fr 1fr}
+  .date-input-wrap{grid-column:auto}
+  .modal{border-radius:24px;margin-bottom:1rem;max-height:85vh}
+  .overlay{align-items:center}
+}
+@media(min-width:1100px){
+  .cards-list{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div style="position:absolute;top:1.25rem;right:1.25rem;z-index:10;display:flex;gap:8px;align-items:center">
+    <span id="adminIndicator" style="display: inline-block; font-size: 10px; color: rgba(255, 255, 255, 0.7); font-weight: 600; letter-spacing: 0.08em; background: rgba(255, 255, 255, 0.1); padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">✏️ ADMIN</span>
+    <button class="notif-btn" style="position:static" onclick="openNotif()" title="Notificaciones">
+      🔔
+      <div class="notif-badge" id="notifBadge" style="display:none">!</div>
+    </button>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" fill="none"></line><path d="M16 10a4 4 0 0 1-8 0" fill="none" stroke="currentColor" stroke-width="2"></path></svg> Todo en un solo lugar</div>
+    <div style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:4px;font-weight:500">by Micky Martinez</div>
+    <h1 class="hero-title">Flores &amp; <em>Avellaneda</em></h1>
+    <p class="hero-sub">Los mejores locales de indumentaria mayorista, filtrados por calidad y relación precio-calidad. No están todos — están los mejores.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong id="statTotal">26</strong><span>Locales</span></div>
+      <div class="hero-stat"><strong id="statRopa">19</strong><span>Ropa</span></div>
+      <div class="hero-stat"><strong id="statZapatos">3</strong><span>Calzado</span></div>
+      <div class="hero-stat"><strong id="statAcc">4</strong><span>Accesorios</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TAB NAV ===== -->
+<nav class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab(&#39;locales&#39;,this)">LOCALES</button>
+  <button class="tab-btn" onclick="switchTab(&#39;logistica&#39;,this)">ARMÁ TU RECORRIDO</button>
+  <button class="tab-btn" onclick="switchTab(&#39;agregar&#39;,this)">AGREGAR LOCAL</button>
+</nav>
+
+<!-- ===== PENDING REQUESTS (admin only — shown when pendingStores.length > 0) ===== -->
+<div id="pendingPanel" style="display:none">
+  <div class="pending-panel">
+    <h4>⏳ Solicitudes pendientes de aprobación</h4>
+    <div id="pendingList"></div>
+  </div>
+</div>
+
+<!-- ============ VIEW: LOCALES ============ -->
+<div class="view active" id="view-locales">
+  <div class="toolbar">
+    <div class="search-wrap">
+      <span class="icon">🔍</span>
+      <input type="text" id="searchBox" placeholder="Buscar local, estilo, dirección…" oninput="renderCards()">
+    </div>
+    <div class="filter-row" id="subCatRow"></div>
+  </div>
+  <div class="cat-scroll" id="catScroll"><div class="cat-pill on" onclick="setCat(&#39;Todos&#39;)">Todos</div><div class="cat-pill" onclick="setCat(&#39;Ropa&#39;)">Ropa</div><div class="cat-pill" onclick="setCat(&#39;Calzado&#39;)">Calzado</div><div class="cat-pill" onclick="setCat(&#39;Accesorios&#39;)">Accesorios</div><div class="cat-pill" onclick="setCat(&#39;Mochilas &amp; Bolsos&#39;)">Mochilas &amp; Bolsos</div></div>
+  <div class="sort-bar">
+    <span class="count" id="countLabel">26 locales</span>
+    <select id="sortSelect" onchange="renderCards()">
+      <option value="default">Ordenar…</option>
+      <option value="score">⭐ Mejor puntuados</option>
+      <option value="name">A–Z</option>
+      <option value="price_asc">💰 Menor precio</option>
+    </select>
+  </div>
+  <div class="cards-list" id="cardsList">
+    <div class="local-card" onclick="openModal(&#39;calavia&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Calavia</div>
+          <div class="card-sub">Ropa · Básicos, Tops &amp; Bodies</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Importados</span><span class="tag tag-style">Básicos premium</span><span class="tag tag-style">Tendencia</span>
+        <span class="tag tag-min">Min: 5 prendas presencial / $300.000 web</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Helguera%20555%2C%20local%205%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Helguera 555, local 5, Flores</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/calavia.official" target="_blank" onclick="event.stopPropagation()">@calavia.official</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://calavia.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Importadores directos. Se especializan en básicos premium, tops y jeans de calidad importada. Todo hermoso, mínimo 5 prendas.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;calavia&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;kremia&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Kremia Moda</div>
+          <div class="card-sub">Ropa · Sastrería, Básicos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Sastrería</span><span class="tag tag-style">Importados</span><span class="tag tag-style">Urbano</span>
+        <span class="tag tag-min">Min: $100.000 presencial / $50.000 online</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Cuenca%20569%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Cuenca 569, Flores</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/kremia.moda" target="_blank" onclick="event.stopPropagation()">@kremia.moda</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://kremiamoda.com/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">El paraíso de la sastrería. Calidad excepcional. Blazers, conjuntos, jeans. Especializados en sastrería e indumentaria importada.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;kremia&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;culdesac&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Cul de Sac</div>
+          <div class="card-sub">Ropa · Básicos, Jeans &amp; Denim</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Casual</span><span class="tag tag-style">Básicos</span><span class="tag tag-style">Denim</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Cuenca%20590%20%2F%20Argerich%20778%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Cuenca 590 / Argerich 778, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie 8–16:30 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/culdesac.ok" target="_blank" onclick="event.stopPropagation()">@culdesac.ok</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Indumentaria femenina por mayor. Dos locales en la zona. Se especializan en básicos y denim casual.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;culdesac&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;oliss&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Oliss Style</div>
+          <div class="card-sub">Ropa · Urbano / Street, Básicos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Urbano</span><span class="tag tag-style">Casual</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/oliss_style" target="_blank" onclick="event.stopPropagation()">@oliss_style</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Local de moda urbana en Flores. Ropa de uso diario y casual para el día a día.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;oliss&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;bellkys&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Bellkys</div>
+          <div class="card-sub">Ropa · Básicos, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Femenino</span><span class="tag tag-style">Casual</span><span class="tag tag-style">Básicos</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Cuenca%20510%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Cuenca 510, Flores</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/bellkys_" target="_blank" onclick="event.stopPropagation()">@bellkys_</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://bellkys.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Moda femenina al mejor precio. 324K seguidores en IG. Se especializan en ropa femenina casual y básicos. Envíos a todo el país.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;bellkys&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;will&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Will BSAS</div>
+          <div class="card-sub">Ropa · Urbano / Street, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Urbano</span><span class="tag tag-style">Joven</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/will_bsas" target="_blank" onclick="event.stopPropagation()">@will_bsas</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Local de indumentaria en la zona de Flores. Especializado en ropa urbana y street style joven.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;will&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;condesa&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Condesa Indumentaria</div>
+          <div class="card-sub">Ropa · Básicos, Tops &amp; Bodies</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Básicos</span><span class="tag tag-style">Casual</span><span class="tag tag-style">Femenino</span>
+        <span class="tag tag-min">Min: Envíos gratis desde $170.000</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/CABA%20(online%20%2B%20local)%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">CABA (online + local)</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/condesa_indumentaria" target="_blank" onclick="event.stopPropagation()">@condesa_indumentaria</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Especialistas en tops y básicos. Novedades todas las semanas. 96K seguidores. Ropa femenina para el día a día.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;condesa&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;jessy&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Jessy Indumentaria</div>
+          <div class="card-sub">Ropa · Plus Size, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Talles grandes</span><span class="tag tag-style">Casual</span><span class="tag tag-style">Trabajo</span>
+        <span class="tag tag-min">Min: Solo mayorista</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/letsbejessy" target="_blank" onclick="event.stopPropagation()">@letsbejessy</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Especialistas en talles L, XL y XXL. 126K seguidores. Ropa canchera para trabajar y casual. Referentes en Plus Size.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;jessy&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;wuau&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Wuau Buenos Aires</div>
+          <div class="card-sub">Ropa · Básicos, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Femenino</span><span class="tag tag-style">Casual</span><span class="tag tag-style">Básicos</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Av.%20Avellaneda%203177%20%2F%20Helguera%20445%20%2F%20Cuenca%20410%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Av. Avellaneda 3177 / Helguera 445 / Cuenca 410</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/wuaubuenosaires" target="_blank" onclick="event.stopPropagation()">@wuaubuenosaires</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">3 locales en la zona. 76K seguidores. Venta mayorista con envíos. Básicos y ropa femenina casual de uso cotidiano.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;wuau&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;grounge&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Grounge</div>
+          <div class="card-sub">Ropa · Básicos, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Femenino</span><span class="tag tag-style">Fabricantes</span><span class="tag tag-style">Básicos</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Cuenca%20431%20%2F%20Mor%C3%B3n%203174%20%2F%20Campana%20395%20%2F%20Aranguren%203167%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Cuenca 431 / Morón 3174 / Campana 395 / Aranguren 3167</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/grounge.official" target="_blank" onclick="event.stopPropagation()">@grounge.official</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Fabricantes con 4 locales en la zona. 370K seguidores. Se especializan en camperas, jeans y básicos de fabricación propia. Gran variedad.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;grounge&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;buddha&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Buddha Clothing</div>
+          <div class="card-sub">Ropa · Urbano / Street, Básicos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$ muy accesible</span>
+        <span class="tag tag-style">Casual</span><span class="tag tag-style">Básicos</span><span class="tag tag-style">Boho</span>
+        <span class="tag tag-min">Min: Por mayor y minorista</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Campana%20616%20%2F%20Aranguren%203195%20%2F%20Av.%20Avellaneda%203059%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Campana 616 / Aranguren 3195 / Av. Avellaneda 3059</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie 7:30–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/buddha.original" target="_blank" onclick="event.stopPropagation()">@buddha.original</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Mayorista y minorista. 3 locales. 215K seguidores. Precios muy accesibles. Especialistas en ropa casual y básicos para todos los días.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;buddha&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;divina&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Divina Trend</div>
+          <div class="card-sub">Ropa · Básicos, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Casual</span><span class="tag tag-style">Femenino</span><span class="tag tag-style">Básicos</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Cuenca%20474%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Cuenca 474, Flores</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/divina.trend" target="_blank" onclick="event.stopPropagation()">@divina.trend</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">73K seguidores. Venta mayorista. Moda femenina casual para el día a día.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;divina&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;blush&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Blush</div>
+          <div class="card-sub">Ropa · Básicos, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Femenino</span><span class="tag tag-style">Esencial</span><span class="tag tag-style">Clean</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/blush.oficial" target="_blank" onclick="event.stopPropagation()">@blush.oficial</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">147K seguidores. Estilo limpio y esencial. Especialistas en básicos femeninos de calidad para el uso cotidiano.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;blush&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;unisminime&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Unis Minime</div>
+          <div class="card-sub">Ropa · Básicos, Casual</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Minimalista</span><span class="tag tag-style">Básicos</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/unisminime" target="_blank" onclick="event.stopPropagation()">@unisminime</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Local de ropa minimalista en Flores. Especialistas en básicos y prendas de estética limpia y moderna.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;unisminime&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;tif&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">TIF BA</div>
+          <div class="card-sub">Ropa · Sastrería, Urbano / Street</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Sastrería street</span><span class="tag tag-style">Minimal</span><span class="tag tag-style">Moderno</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Helguera%20720%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Helguera 720, Flores</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/tifba_" target="_blank" onclick="event.stopPropagation()">@tifba_</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://tifba.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Sastrería street style. Muy buena calidad y diseño moderno. 138K seguidores. Se especializan en sastrería para uso cotidiano y trabajo.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;tif&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;truhaus&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Truhaus by Estussy</div>
+          <div class="card-sub">Ropa · Sastrería, Urbano / Street</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$$ medio-alto</span>
+        <span class="tag tag-style">Sastrería</span><span class="tag tag-style">Premium</span><span class="tag tag-style">Diseño</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/truhausoficial" target="_blank" onclick="event.stopPropagation()">@truhausoficial</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Línea premium de Estussy. 23K seguidores. Colección SS26 disponible. Especialistas en sastrería de diseño y prendas de calidad premium.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;truhaus&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;zannavara&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Zannavara</div>
+          <div class="card-sub">Ropa · Casual, Básicos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Femenino</span><span class="tag tag-style">Casual</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/zannavaraoficial" target="_blank" onclick="event.stopPropagation()">@zannavaraoficial</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://zannavara.mitiendanube.com/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">46K seguidores. Tienda online disponible. Moda femenina casual para el día a día.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;zannavara&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;vitabella&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Vita Bella Shoes</div>
+          <div class="card-sub">Calzado · Zapatos, Botas &amp; Botines</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Trends</span><span class="tag tag-style">Básicos</span><span class="tag tag-style">Moda</span>
+        <span class="tag tag-min">Min: Mayorista</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Argerich%20573%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Argerich 573, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/vitabellashoes" target="_blank" onclick="event.stopPropagation()">@vitabellashoes</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://vita-shoes.com/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">48.5K seguidores TikTok. Basics y trends. Buena variedad de estilos y tendencias en calzado.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;vitabella&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;volga&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Volga Shoes</div>
+          <div class="card-sub">Calzado · Zapatos, Botas &amp; Botines</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$ muy accesible</span>
+        <span class="tag tag-style">Económico</span><span class="tag tag-style">Variedad</span><span class="tag tag-style">Clásico</span>
+        <span class="tag tag-min">Min: Mayorista</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Argerich%20572%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Argerich 572, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/volga.shoes" target="_blank" onclick="event.stopPropagation()">@volga.shoes</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://volgashoes.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Precios muy accesibles (desde $34.999 en barata). Gran barata periódica. Variedad de calzado clásico y económico.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;volga&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;bandida&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Bandida Shoes</div>
+          <div class="card-sub">Calzado · Zapatos, Botas &amp; Botines</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Moda</span><span class="tag tag-style">Tendencia</span><span class="tag tag-style">Cuero</span>
+        <span class="tag tag-min">Min: Mayorista / minorista x menor online</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Helguera%20449%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Helguera 449, Flores</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/bandidashoes1" target="_blank" onclick="event.stopPropagation()">@bandidashoes1</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://bandidashoes.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Zapatería en Helguera 449. Especialistas en calzado de moda y tendencia. Tel mayorista 11-6500-6573.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;bandida&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;puntoar&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Punto AR Accesorios</div>
+          <div class="card-sub">Accesorios · Carteras, Bolsos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Tendencia</span><span class="tag tag-style">Variedad</span><span class="tag tag-style">Completo</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Argerich%20632%20%2F%20Aranguren%203340%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Argerich 632 / Aranguren 3340, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/puntoar_accesorios" target="_blank" onclick="event.stopPropagation()">@puntoar_accesorios</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://puntoar-accesorios.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">2 locales. 52.5K seguidores TikTok. Especialistas en bolsos, lentes, sombreros y cinturones. Muy completo.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;puntoar&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;byf&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">ByF Women Accesorios</div>
+          <div class="card-sub">Accesorios · Carteras, Bolsos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Accesorios</span><span class="tag tag-style">Bolsos</span><span class="tag tag-style">Tendencia</span>
+        <span class="tag tag-min">Min: $50.000 web</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Av.%20Avellaneda%203188%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Av. Avellaneda 3188</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/byfwomen3188" target="_blank" onclick="event.stopPropagation()">@byfwomen3188</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://byfwomen.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Mini bags, bufandas, termos. 13.3K seguidores TikTok con 66M likes. Muy viral. Especialistas en accesorios trendy.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;byf&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;filippa&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Filippa Moda</div>
+          <div class="card-sub">Accesorios · Carteras, Bolsos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Cuero 100%</span><span class="tag tag-style">Carteras</span><span class="tag tag-style">Premium</span>
+        <span class="tag tag-min">Min: Mayorista</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Felipe%20Vallese%203197%20%2F%20Helguera%20407%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Felipe Vallese 3197 / Helguera 407</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 hs</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/filippamoda" target="_blank" onclick="event.stopPropagation()">@filippamoda</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Carteras y accesorios 100% cuero. Mayorista. Dos locales. Especialistas en carteras de cuero premium.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;filippa&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;tresher&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Tresher Accesorios</div>
+          <div class="card-sub">Accesorios · Carteras, Bolsos</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$ muy accesible</span>
+        <span class="tag tag-style">Económico</span><span class="tag tag-style">Variedad</span><span class="tag tag-style">Tendencia</span>
+        <span class="tag tag-min">Min: Por mayor</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Av.%20Avellaneda%203039%20%2F%203020%20%2F%203271%20%2F%203310%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Av. Avellaneda 3039 / 3020 / 3271 / 3310</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/tresheraccesorios" target="_blank" onclick="event.stopPropagation()">@tresheraccesorios</a></span>
+        
+      </div>
+      <div class="card-footer">
+        <div class="card-note">4 locales. 223.7K seguidores TikTok. El paraíso de los accesorios. Desde $5.000. Especialistas en accesorios accesibles y de moda.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;tresher&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;inquieta&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Inquieta Denim</div>
+          <div class="card-sub">Ropa · Jeans &amp; Denim</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Denim</span><span class="tag tag-style">Jeans</span><span class="tag tag-style">Especialista</span>
+        <span class="tag tag-min">Min: Mayorista</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Helguera%20493%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Helguera 493, Flores</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/inquieta.denim" target="_blank" onclick="event.stopPropagation()">@inquieta.denim</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://inquietadenim.com/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">Creando denim desde 2003. 20K seguidores TikTok. Especialistas en jeans en todos los cortes. Calidad premium en denim.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;inquieta&#39;)">Ver más →</button>
+      </div>
+    </div>
+    <div class="local-card" onclick="openModal(&#39;isostasia&#39;)">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">Isostasia Denim</div>
+          <div class="card-sub">Ropa · Jeans &amp; Denim</div>
+        </div>
+        <div class="score-ring score-none">—<span></span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">$$ moderado</span>
+        <span class="tag tag-style">Denim</span><span class="tag tag-style">Jeans</span><span class="tag tag-style">Premium</span>
+        <span class="tag tag-min">Min: Mayorista</span>
+      </div>
+      <div class="card-info">
+        <span class="info-item"><span class="ico">📍</span><a href="https://www.google.com/maps/search/Flores%2C%20CABA%20Flores%20CABA%20Argentina" target="_blank" onclick="event.stopPropagation()">Flores, CABA</a></span>
+        <span class="info-item"><span class="ico">🕐</span>Lun–Vie aprox 8–17 / Sáb 8–13</span>
+        <span class="info-item"><span class="ico">📷</span><a href="https://instagram.com/isostasia.denim" target="_blank" onclick="event.stopPropagation()">@isostasia.denim</a></span>
+        <span class="info-item"><span class="ico">🌐</span><a href="https://isostasia.com.ar/" target="_blank" onclick="event.stopPropagation()">Web</a></span>
+      </div>
+      <div class="card-footer">
+        <div class="card-note">96.6K seguidores TikTok. Industria argentina. Denim de alta calidad con estética muy cuidada. Especialistas en jeans premium.</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal(&#39;isostasia&#39;)">Ver más →</button>
+      </div>
+    </div></div>
+</div>
+
+<!-- ============ VIEW: LOGÍSTICA ============ -->
+<div class="view" id="view-logistica">
+  <div class="log-view">
+    <h2>ARMÁ TU RECORRIDO</h2>
+    <p>Elegí los locales que querés visitar, definí cuánto tiempo tenés y te organizamos la ruta óptima por zona, del más cercano al más lejano.</p>
+
+    <div class="log-form">
+      <div class="log-top-grid">
+        <div>
+          <div class="field-label">Hora de llegada</div>
+          <input type="time" id="logHora" value="09:00">
+        </div>
+        <div>
+          <div class="field-label">Tiempo disponible</div>
+          <select id="logTiempo">
+            <option value="2">2 horas</option>
+            <option value="3" selected="">3 horas</option>
+            <option value="4">4 horas</option>
+            <option value="5">5 horas</option>
+            <option value="8">Todo el día</option>
+          </select>
+        </div>
+        <div>
+          <div class="field-label">Tiempo por local</div>
+          <select id="logMinxlocal">
+            <option value="20">20 min c/u</option>
+            <option value="30">30 min c/u</option>
+            <option value="40" selected="">40 min c/u</option>
+            <option value="60">1 hora c/u</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:none"><input type="date" id="logFecha"></div>
+
+      <div>
+        <div class="field-label" style="margin-bottom:8px">Seleccioná los locales</div>
+        <div style="font-size:11px;color:var(--text-muted);margin-bottom:8px">Tocá una vez → <strong style="color:var(--accent-dark)">SÍ O SÍ</strong> · Dos veces → <strong style="color:var(--amber)">Si llego</strong> · Tres veces → quita la selección</div>
+        <div class="picker-search-wrap">
+          <span class="ps-icon">🔍</span>
+          <input type="text" id="pickerSearch" placeholder="Buscar local…" oninput="filterPicker()">
+        </div>
+        <div class="local-picker" id="localPicker">
+    <div class="local-picker-item" onclick="togglePicker(&#39;calavia&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Calavia</div>
+        <div class="picker-addr">Helguera 555, local 5, Flores</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;kremia&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Kremia Moda</div>
+        <div class="picker-addr">Cuenca 569, Flores</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;culdesac&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Cul de Sac</div>
+        <div class="picker-addr">Cuenca 590 / Argerich 778, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;oliss&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Oliss Style</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;bellkys&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Bellkys</div>
+        <div class="picker-addr">Cuenca 510, Flores</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;will&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Will BSAS</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;condesa&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Condesa Indumentaria</div>
+        <div class="picker-addr">CABA (online + local)</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;jessy&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Jessy Indumentaria</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;wuau&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Wuau Buenos Aires</div>
+        <div class="picker-addr">Av. Avellaneda 3177 / Helguera 445 / Cuenca 410</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;grounge&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Grounge</div>
+        <div class="picker-addr">Cuenca 431 / Morón 3174 / Campana 395 / Aranguren 3167</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;buddha&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Buddha Clothing</div>
+        <div class="picker-addr">Campana 616 / Aranguren 3195 / Av. Avellaneda 3059</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;divina&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Divina Trend</div>
+        <div class="picker-addr">Cuenca 474, Flores</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;blush&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Blush</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;unisminime&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Unis Minime</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;tif&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">TIF BA</div>
+        <div class="picker-addr">Helguera 720, Flores</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;truhaus&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Truhaus by Estussy</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;zannavara&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Zannavara</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;vitabella&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Vita Bella Shoes</div>
+        <div class="picker-addr">Argerich 573, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;volga&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Volga Shoes</div>
+        <div class="picker-addr">Argerich 572, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;bandida&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Bandida Shoes</div>
+        <div class="picker-addr">Helguera 449, Flores</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;puntoar&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Punto AR Accesorios</div>
+        <div class="picker-addr">Argerich 632 / Aranguren 3340, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;byf&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">ByF Women Accesorios</div>
+        <div class="picker-addr">Av. Avellaneda 3188</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;filippa&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Filippa Moda</div>
+        <div class="picker-addr">Felipe Vallese 3197 / Helguera 407</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;tresher&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Tresher Accesorios</div>
+        <div class="picker-addr">Av. Avellaneda 3039 / 3020 / 3271 / 3310</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;inquieta&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Inquieta Denim</div>
+        <div class="picker-addr">Helguera 493, Flores</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div>
+    <div class="local-picker-item" onclick="togglePicker(&#39;isostasia&#39;)">
+      <div style="flex:1">
+        <div class="picker-name">Isostasia Denim</div>
+        <div class="picker-addr">Flores, CABA</div>
+      </div>
+      <span class="picker-time">40–60 min</span>
+      <span class="picker-priority pri-off">+ Agregar</span>
+    </div></div>
+      </div>
+
+      <button class="btn-build-route" onclick="buildRoute()">✦ Ver mi ruta →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ VIEW: AGREGAR LOCAL ============ -->
+<div class="view" id="view-agregar">
+  <div class="add-view">
+    <h2>➕ Sugerí un local</h2>
+    <p>¿Conocés un local que merece estar acá? Sugerilo — cada sugerencia la reviso yo antes de publicarla. Si lo apruebo, aparece en el directorio.</p>
+    <div class="pending-banner" id="addSuccess">
+      <strong>🎉 ¡Gracias por tu aporte!</strong>
+      Tu sugerencia está pendiente de aprobación. Te avisamos cuando se suba al directorio ✦
+    </div>
+    <div class="add-form">
+      <div>
+        <div class="field-label">Nombre del local <span class="req-star">*</span></div>
+        <input type="text" id="addName" placeholder="Ej: Calavia Indumentaria" required="">
+      </div>
+      <div>
+        <div class="field-label">Categoría principal <span class="req-star">*</span></div>
+        <select id="addCat" onchange="updateSubcats()" required="">
+          <option value="Ropa">Ropa</option>
+          <option value="Calzado">Calzado</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="Mochilas &amp; Bolsos">Mochilas &amp; Bolsos</option>
+        </select>
+      </div>
+      <div>
+        <div class="field-label">Descripción — ¿qué venden? <span class="req-star">*</span></div>
+        <textarea id="addNota" rows="3" placeholder="Ej: Se especializan en camperas y jeans de denim. Ropa para el día a día y para laburar. Mayorista con mínimo de compra..." required=""></textarea>
+      </div>
+      <div>
+        <div class="field-label">Rango de precio <span class="req-star">*</span></div>
+        <select id="addPrice" required="">
+          <option value="$">$ — Muy accesible</option>
+          <option value="$$" selected="">$$ — Moderado</option>
+          <option value="$$$">$$$ — Medio-alto</option>
+          <option value="$$$$">$$$$ — Premium</option>
+        </select>
+      </div>
+      <div>
+        <div class="field-label">Subcategorías (elegí las que aplican)</div>
+        <div class="subcat-grid" id="subcatGrid"><button class="subcat-check" onclick="toggleSubcat(this,&#39;Básicos&#39;)">Básicos</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Jeans &amp; Denim&#39;)">Jeans &amp; Denim</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Sastrería&#39;)">Sastrería</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Urbano / Street&#39;)">Urbano / Street</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Camperas&#39;)">Camperas</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Buzos&#39;)">Buzos</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Sport / Active&#39;)">Sport / Active</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Vestidos&#39;)">Vestidos</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Tops &amp; Bodies&#39;)">Tops &amp; Bodies</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Fiesta&#39;)">Fiesta</button><button class="subcat-check" onclick="toggleSubcat(this,&#39;Plus Size&#39;)">Plus Size</button></div>
+      </div>
+      <div>
+        <div class="field-label">Dirección <span class="req-star">*</span></div>
+        <input type="text" id="addAddr" placeholder="Ej: Cuenca 431, Flores, CABA" required="">
+      </div>
+      <div>
+        <div class="field-label">Instagram (pegá el link completo)</div>
+        <input type="url" id="addIg" placeholder="https://instagram.com/nombredel local">
+      </div>
+      <div>
+        <div class="field-label">Página web (pegá el link completo)</div>
+        <input type="url" id="addWeb" placeholder="https://www.sitiodellolocal.com">
+      </div>
+      <div>
+        <div class="field-label">Horario</div>
+        <input type="text" id="addHorario" placeholder="Ej: Lun–Vie 8–17 hs / Sáb 8–13">
+      </div>
+      <div>
+        <div class="field-label">Mínimo de compra</div>
+        <input type="text" id="addMinimo" placeholder="Ej: $100.000 o 5 prendas (opcional)">
+      </div>
+      <div>
+        <div class="field-label">Estilo / palabras clave (separadas por coma)</div>
+        <input type="text" id="addEstilo" placeholder="Ej: camperas, jeans, básicos, trabajo">
+      </div>
+      <button class="btn-add-submit" onclick="submitLocal()">✦ Enviar sugerencia</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL DETALLE ============ -->
+<div class="overlay" id="overlay" onclick="closeModal(event)">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-hero">
+      <div style="flex:1">
+        <div class="modal-name" id="mName">Calavia</div>
+        <div class="modal-cat" id="mCat">Ropa · Básicos, Tops &amp; Bodies, Jeans &amp; Denim</div>
+        <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap" id="mLinks"><a href="https://instagram.com/calavia.official" target="_blank" style="background:rgba(255,255,255,0.15);color:white;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,0.25);backdrop-filter:blur(4px)">📷 Instagram</a><a href="https://calavia.com.ar/" target="_blank" style="background:rgba(255,255,255,0.15);color:white;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,0.25);backdrop-filter:blur(4px)">🌐 Web</a></div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+        <button class="modal-close" onclick="document.getElementById(&#39;overlay&#39;).classList.remove(&#39;open&#39;)">✕</button>
+        <div class="modal-score-big" id="mScore"><span style="font-size:11px">Sin votos</span></div>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <!-- Maps preview -->
+      <div id="mMapsLink" class="modal-maps" onclick="">
+        <div class="maps-icon">📍</div>
+        <div style="font-size:12px;font-weight:600">Ver en Google Maps</div>
+        <div style="font-size:11px;opacity:0.7" id="mMapsAddr">Helguera 555, local 5, Flores</div>
+      </div>
+
+      <!-- Info grid -->
+      <div class="modal-section">
+        <div class="modal-section-title">🏪 Información del local</div>
+        <div class="detail-grid" id="mInfo">
+    <div class="detail-item"><div class="detail-label">📍 Dirección</div><div class="detail-value"><a href="https://www.google.com/maps/search/Helguera%20555%2C%20local%205%2C%20Flores%20Flores%20CABA%20Argentina" target="_blank">Helguera 555, local 5, Flores</a></div></div>
+    <div class="detail-item"><div class="detail-label">🕐 Horario</div><div class="detail-value">Lun–Vie 8–17 hs</div></div>
+    <div class="detail-item"><div class="detail-label">🛒 Mínimo</div><div class="detail-value">5 prendas presencial / $300.000 web</div></div>
+    <div class="detail-item"><div class="detail-label">💵 Precio</div><div class="detail-value">$$ — moderado</div></div>
+    <div class="detail-item"><div class="detail-label">📷 Instagram</div><div class="detail-value"><a href="https://instagram.com/calavia.official" target="_blank">@calavia.official</a></div></div>
+    <div class="detail-item"><div class="detail-label">🌐 Web</div><div class="detail-value"><a href="https://calavia.com.ar/" target="_blank">calavia.com.ar</a></div></div>
+    <div class="detail-item full"><div class="detail-label">✦ Qué venden</div><div class="detail-value">Importadores directos. Se especializan en básicos premium, tops y jeans de calidad importada. Todo hermoso, mínimo 5 prendas.</div></div>
+  </div>
+        <div class="tag-row" style="margin-top:12px" id="mTags"><span class="tag tag-style">Importados</span><span class="tag tag-style">Básicos premium</span><span class="tag tag-style">Tendencia</span><span class="tag tag-price">$$</span></div>
+      </div>
+
+      <!-- Edit section (admin only) -->
+      <div id="editSection" style="text-align: right; margin-bottom: 16px; display: block;">
+        <button class="btn-edit-link" onclick="openEdit()">✏️ Editar información</button>
+      </div>
+      <div id="editFormSection" style="display:none" class="modal-section">
+        <div class="modal-section-title">✏️ Editar local</div>
+        <div class="edit-form">
+          <div><label>Dirección</label><input type="text" id="eAddr"></div>
+          <div><label>Horario</label><input type="text" id="eHorario"></div>
+          <div><label>Mínimo</label><input type="text" id="eMinimo"></div>
+          <div><label>Precio</label>
+            <select id="ePrice">
+              <option value="$">$ Muy accesible</option>
+              <option value="$$">$$ Moderado</option>
+              <option value="$$$">$$$ Medio-alto</option>
+              <option value="$$$$">$$$$ Premium</option>
+            </select>
+          </div>
+          <div><label>Descripción</label><textarea id="eNota" rows="3"></textarea></div>
+          <button class="btn-save" onclick="saveEdit()">Guardar cambios</button>
+          <button class="btn-cancel" onclick="closeEdit()">Cancelar</button>
+        </div>
+      </div>
+
+      <!-- Reviews section -->
+      <div class="modal-section">
+        <div class="modal-section-title">💬 Reseñas</div>
+        <div class="reviews-tab">
+          <button class="rtab-btn on" id="rtab-ver" onclick="showReviewsTab(&#39;ver&#39;)">Ver reseñas</button>
+          <button class="rtab-btn" id="rtab-dejar" onclick="showReviewsTab(&#39;dejar&#39;)">Dejar reseña</button>
+        </div>
+
+        <!-- Ver reseñas -->
+        <div id="panel-ver" style="display: block;">
+          <div class="comments-list" id="mComments"><p style="font-size:13px;color:var(--text-muted);font-style:italic">Todavía no hay reseñas. ¡Sé la primera!</p></div>
+          <div id="showMoreWrap" style="display:none">
+            <div class="show-more-reviews" onclick="showAllReviews()">Ver más reseñas ↓</div>
+          </div>
+        </div>
+
+        <!-- Dejar reseña -->
+        <div id="panel-dejar" style="display:none">
+          <div class="comment-form">
+            <div>
+              <div class="field-label">Tu nombre (o apodo)</div>
+              <input type="text" id="cAuthor" placeholder="Ej: Caro, Mia, @user123">
+            </div>
+            <div>
+              <div class="field-label">¿Compraste algo?</div>
+              <select id="cBought">
+                <option value="">No especifica</option>
+                <option value="yes">✅ Sí, compré</option>
+                <option value="no">👀 Fui a ver nomás</option>
+              </select>
+            </div>
+            <div id="cWhenWrap" style="display:none">
+              <div class="field-label">¿Cuándo fuiste?</div>
+              <select id="cWhen">
+                <option value="esta semana">Esta semana</option>
+                <option value="este mes">Este mes</option>
+                <option value="hace 1-3 meses">Hace 1-3 meses</option>
+                <option value="hace más de 3 meses">Hace más de 3 meses</option>
+              </select>
+            </div>
+            <div>
+              <div class="field-label">¿Los precios son…?</div>
+              <select id="cPriceOpinion">
+                <option value="">Sin comentario</option>
+                <option value="Precios muy accesibles 💚">Muy accesibles 💚</option>
+                <option value="Precios de referencia 👍">De referencia 👍</option>
+                <option value="Precios altos 🟡">Un poco caros 🟡</option>
+                <option value="Precios elevados 🔴">Caros 🔴</option>
+              </select>
+            </div>
+            <div>
+              <div class="field-label">Puntaje (1–10)</div>
+              <div class="score-pick" id="scorePick"><button class="score-opt" onclick="pickScore(1)">1</button><button class="score-opt" onclick="pickScore(2)">2</button><button class="score-opt" onclick="pickScore(3)">3</button><button class="score-opt" onclick="pickScore(4)">4</button><button class="score-opt" onclick="pickScore(5)">5</button><button class="score-opt" onclick="pickScore(6)">6</button><button class="score-opt" onclick="pickScore(7)">7</button><button class="score-opt" onclick="pickScore(8)">8</button><button class="score-opt" onclick="pickScore(9)">9</button><button class="score-opt" onclick="pickScore(10)">10</button></div>
+            </div>
+            <div>
+              <div class="field-label">Tu reseña</div>
+              <textarea id="cText" rows="3" placeholder="¿Qué te pareció? ¿Qué compraste? ¿Qué recomendarías?"></textarea>
+            </div>
+            <button class="btn-submit" onclick="submitComment()">Publicar reseña ✦</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ROUTE PANEL ============ -->
+<div class="route-overlay" id="routeOverlay" onclick="if(event.target===this)closeRoutePanel()">
+  <div class="route-panel" id="routePanel"></div>
+</div>
+
+<!-- ============ NOTIF PANEL ============ -->
+<div class="notif-overlay" id="notifOverlay" onclick="if(event.target===this)closeNotif()">
+  <div class="notif-panel">
+    <h3>🔔 Notificaciones</h3>
+    <div id="notifList"></div>
+    <button class="btn-notif-close" onclick="closeNotif()">Cerrar</button>
+  </div>
+</div>
+
+<script>
+// ===== CONFIG =====
+// ===== ADMIN AUTH — atajo secreto: presionar M-I-C-K-Y =====
+const ADMIN_SESSION_KEY = 'avell_admin_session';
+const SECRET_COMBO = ['m','i','c','k','y'];
+let comboBuffer = [];
+let comboTimer = null;
+
+function checkAdminSession(){
+  try{const s=sessionStorage.getItem(ADMIN_SESSION_KEY);if(s==='granted')return true;}catch(e){}return false;
+}
+let IS_ADMIN = checkAdminSession();
+
+document.addEventListener('keydown', function(e){
+  const key = e.key.toLowerCase();
+  comboBuffer.push(key);
+  if(comboBuffer.length > SECRET_COMBO.length) comboBuffer.shift();
+  clearTimeout(comboTimer);
+  comboTimer = setTimeout(()=>{ comboBuffer=[]; }, 2000);
+  if(comboBuffer.join('') === SECRET_COMBO.join('')){
+    comboBuffer=[];
+    if(!IS_ADMIN){
+      try{sessionStorage.setItem(ADMIN_SESSION_KEY,'granted');}catch(ex){}
+      IS_ADMIN=true;
+      const ind=document.getElementById('adminIndicator');
+      if(ind) ind.style.display='inline-block';
+      // Show all edit buttons in any open modal
+      document.querySelectorAll('#editSection').forEach(el=>el.style.display='block');
+      showToast('✏️ Modo edición activado');
+    } else {
+      // Toggle off
+      try{sessionStorage.removeItem(ADMIN_SESSION_KEY);}catch(ex){}
+      IS_ADMIN=false;
+      const ind=document.getElementById('adminIndicator');
+      if(ind) ind.style.display='none';
+      document.querySelectorAll('#editSection').forEach(el=>el.style.display='none');
+      showToast('Modo edición desactivado');
+    }
+  }
+});
+
+function showToast(msg){
+  let t=document.getElementById('adminToast');
+  if(!t){
+    t=document.createElement('div');
+    t.id='adminToast';
+    t.style.cssText='position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#2d1b4e;color:white;padding:10px 20px;border-radius:30px;font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;z-index:9999;opacity:0;transition:opacity 0.3s;pointer-events:none;';
+    document.body.appendChild(t);
+  }
+  t.textContent=msg;t.style.opacity='1';
+  setTimeout(()=>t.style.opacity='0',2500);
+}
+const STORE_KEY = 'avell_stores_v3';
+const COMMENTS_KEY = 'avell_comments_v3';
+const PENDING_KEY = 'avell_pending_v1';
+const NOTIF_KEY = 'avell_notifs_v1';
+
+const subcatsByCategory = {
+  'Ropa':['Básicos','Jeans & Denim','Sastrería','Urbano / Street','Camperas','Buzos','Sport / Active','Vestidos','Tops & Bodies','Fiesta','Plus Size'],
+  'Calzado':['Zapatillas','Zapatos','Botas & Botines','Sandalias','Flats'],
+  'Accesorios':['Carteras','Bolsos','Bijouterie','Cinturones','Sombreros','Anteojos','Varios'],
+  'Mochilas & Bolsos':['Mochilas','Carteras chicas','Bandoleras','Riñoneras']
+};
+const priceMap={'$':1,'$$':2,'$$$':3,'$$$$':4};
+
+const DEFAULT_STORES = [
+  {id:'calavia',name:'Calavia',category:'Ropa',subcategory:['Básicos','Tops & Bodies','Jeans & Denim'],address:'Helguera 555, local 5, Flores',instagram:'https://instagram.com/calavia.official',instagramHandle:'@calavia.official',web:'https://calavia.com.ar',horario:'Lun–Vie 8–17 hs',minimo:'5 prendas presencial / $300.000 web',price:'$$',styles:['Importados','Básicos premium','Tendencia'],note:'Importadores directos. Se especializan en básicos premium, tops y jeans de calidad importada. Todo hermoso, mínimo 5 prendas.',score:0},
+  {id:'kremia',name:'Kremia Moda',category:'Ropa',subcategory:['Sastrería','Básicos','Jeans & Denim'],address:'Cuenca 569, Flores',instagram:'https://instagram.com/kremia.moda',instagramHandle:'@kremia.moda',web:'https://kremiamoda.com',horario:'Lun–Vie aprox 8–17 hs',minimo:'$100.000 presencial / $50.000 online',price:'$$',styles:['Sastrería','Importados','Urbano'],note:'El paraíso de la sastrería. Calidad excepcional. Blazers, conjuntos, jeans. Especializados en sastrería e indumentaria importada.',score:0},
+  {id:'culdesac',name:'Cul de Sac',category:'Ropa',subcategory:['Básicos','Jeans & Denim','Tops & Bodies'],address:'Cuenca 590 / Argerich 778, CABA',instagram:'https://instagram.com/culdesac.ok',instagramHandle:'@culdesac.ok',web:'',horario:'Lun–Vie 8–16:30 hs',minimo:'Por mayor',price:'$$',styles:['Casual','Básicos','Denim'],note:'Indumentaria femenina por mayor. Dos locales en la zona. Se especializan en básicos y denim casual.',score:0},
+  {id:'oliss',name:'Oliss Style',category:'Ropa',subcategory:['Urbano / Street','Básicos','Casual'],address:'Flores, CABA',instagram:'https://instagram.com/oliss_style',instagramHandle:'@oliss_style',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Por mayor',price:'$$',styles:['Urbano','Casual'],note:'Local de moda urbana en Flores. Ropa de uso diario y casual para el día a día.',score:0},
+  {id:'bellkys',name:'Bellkys',category:'Ropa',subcategory:['Básicos','Casual','Tops & Bodies'],address:'Cuenca 510, Flores',instagram:'https://instagram.com/bellkys_',instagramHandle:'@bellkys_',web:'https://bellkys.com.ar',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'Por mayor',price:'$$',styles:['Femenino','Casual','Básicos'],note:'Moda femenina al mejor precio. 324K seguidores en IG. Se especializan en ropa femenina casual y básicos. Envíos a todo el país.',score:0},
+  {id:'will',name:'Will BSAS',category:'Ropa',subcategory:['Urbano / Street','Casual'],address:'Flores, CABA',instagram:'https://instagram.com/will_bsas',instagramHandle:'@will_bsas',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Por mayor',price:'$$',styles:['Urbano','Joven'],note:'Local de indumentaria en la zona de Flores. Especializado en ropa urbana y street style joven.',score:0},
+  {id:'condesa',name:'Condesa Indumentaria',category:'Ropa',subcategory:['Básicos','Tops & Bodies','Casual'],address:'CABA (online + local)',instagram:'https://instagram.com/condesa_indumentaria',instagramHandle:'@condesa_indumentaria',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Envíos gratis desde $170.000',price:'$$',styles:['Básicos','Casual','Femenino'],note:'Especialistas en tops y básicos. Novedades todas las semanas. 96K seguidores. Ropa femenina para el día a día.',score:0},
+  {id:'jessy',name:'Jessy Indumentaria',category:'Ropa',subcategory:['Plus Size','Casual','Sastrería'],address:'Flores, CABA',instagram:'https://instagram.com/letsbejessy',instagramHandle:'@letsbejessy',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Solo mayorista',price:'$$',styles:['Talles grandes','Casual','Trabajo'],note:'Especialistas en talles L, XL y XXL. 126K seguidores. Ropa canchera para trabajar y casual. Referentes en Plus Size.',score:0},
+  {id:'wuau',name:'Wuau Buenos Aires',category:'Ropa',subcategory:['Básicos','Casual','Tops & Bodies'],address:'Av. Avellaneda 3177 / Helguera 445 / Cuenca 410',instagram:'https://instagram.com/wuaubuenosaires',instagramHandle:'@wuaubuenosaires',web:'',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'Por mayor',price:'$$',styles:['Femenino','Casual','Básicos'],note:'3 locales en la zona. 76K seguidores. Venta mayorista con envíos. Básicos y ropa femenina casual de uso cotidiano.',score:0},
+  {id:'grounge',name:'Grounge',category:'Ropa',subcategory:['Básicos','Casual','Jeans & Denim','Camperas'],address:'Cuenca 431 / Morón 3174 / Campana 395 / Aranguren 3167',instagram:'https://instagram.com/grounge.official',instagramHandle:'@grounge.official',web:'',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'Por mayor',price:'$$',styles:['Femenino','Fabricantes','Básicos'],note:'Fabricantes con 4 locales en la zona. 370K seguidores. Se especializan en camperas, jeans y básicos de fabricación propia. Gran variedad.',score:0},
+  {id:'buddha',name:'Buddha Clothing',category:'Ropa',subcategory:['Urbano / Street','Básicos','Casual'],address:'Campana 616 / Aranguren 3195 / Av. Avellaneda 3059',instagram:'https://instagram.com/buddha.original',instagramHandle:'@buddha.original',web:'',horario:'Lun–Vie 7:30–17 / Sáb 8–13',minimo:'Por mayor y minorista',price:'$',styles:['Casual','Básicos','Boho'],note:'Mayorista y minorista. 3 locales. 215K seguidores. Precios muy accesibles. Especialistas en ropa casual y básicos para todos los días.',score:0},
+  {id:'divina',name:'Divina Trend',category:'Ropa',subcategory:['Básicos','Casual','Tops & Bodies'],address:'Cuenca 474, Flores',instagram:'https://instagram.com/divina.trend',instagramHandle:'@divina.trend',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Por mayor',price:'$$',styles:['Casual','Femenino','Básicos'],note:'73K seguidores. Venta mayorista. Moda femenina casual para el día a día.',score:0},
+  {id:'blush',name:'Blush',category:'Ropa',subcategory:['Básicos','Casual'],address:'Flores, CABA',instagram:'https://instagram.com/blush.oficial',instagramHandle:'@blush.oficial',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Por mayor',price:'$$',styles:['Femenino','Esencial','Clean'],note:'147K seguidores. Estilo limpio y esencial. Especialistas en básicos femeninos de calidad para el uso cotidiano.',score:0},
+  {id:'unisminime',name:'Unis Minime',category:'Ropa',subcategory:['Básicos','Casual'],address:'Flores, CABA',instagram:'https://instagram.com/unisminime',instagramHandle:'@unisminime',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Por mayor',price:'$$',styles:['Minimalista','Básicos'],note:'Local de ropa minimalista en Flores. Especialistas en básicos y prendas de estética limpia y moderna.',score:0},
+  {id:'tif',name:'TIF BA',category:'Ropa',subcategory:['Sastrería','Urbano / Street','Básicos'],address:'Helguera 720, Flores',instagram:'https://instagram.com/tifba_',instagramHandle:'@tifba_',web:'https://tifba.com.ar',horario:'Lun–Vie 8–17 / Sáb 8–13',minimo:'Por mayor',price:'$$',styles:['Sastrería street','Minimal','Moderno'],note:'Sastrería street style. Muy buena calidad y diseño moderno. 138K seguidores. Se especializan en sastrería para uso cotidiano y trabajo.',score:0},
+  {id:'truhaus',name:'Truhaus by Estussy',category:'Ropa',subcategory:['Sastrería','Urbano / Street'],address:'Flores, CABA',instagram:'https://instagram.com/truhausoficial',instagramHandle:'@truhausoficial',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Por mayor',price:'$$$',styles:['Sastrería','Premium','Diseño'],note:'Línea premium de Estussy. 23K seguidores. Colección SS26 disponible. Especialistas en sastrería de diseño y prendas de calidad premium.',score:0},
+  {id:'zannavara',name:'Zannavara',category:'Ropa',subcategory:['Casual','Básicos'],address:'Flores, CABA',instagram:'https://instagram.com/zannavaraoficial',instagramHandle:'@zannavaraoficial',web:'https://zannavara.mitiendanube.com',horario:'Lun–Vie aprox 8–17 hs',minimo:'Por mayor',price:'$$',styles:['Femenino','Casual'],note:'46K seguidores. Tienda online disponible. Moda femenina casual para el día a día.',score:0},
+  {id:'vitabella',name:'Vita Bella Shoes',category:'Calzado',subcategory:['Zapatos','Botas & Botines','Sandalias'],address:'Argerich 573, CABA',instagram:'https://instagram.com/vitabellashoes',instagramHandle:'@vitabellashoes',web:'https://vita-shoes.com',horario:'Lun–Vie aprox 8–17 hs',minimo:'Mayorista',price:'$$',styles:['Trends','Básicos','Moda'],note:'48.5K seguidores TikTok. Basics y trends. Buena variedad de estilos y tendencias en calzado.',score:0},
+  {id:'volga',name:'Volga Shoes',category:'Calzado',subcategory:['Zapatos','Botas & Botines','Flats'],address:'Argerich 572, CABA',instagram:'https://instagram.com/volga.shoes',instagramHandle:'@volga.shoes',web:'https://volgashoes.com.ar',horario:'Lun–Vie aprox 8–17 hs',minimo:'Mayorista',price:'$',styles:['Económico','Variedad','Clásico'],note:'Precios muy accesibles (desde $34.999 en barata). Gran barata periódica. Variedad de calzado clásico y económico.',score:0},
+  {id:'bandida',name:'Bandida Shoes',category:'Calzado',subcategory:['Zapatos','Botas & Botines','Sandalias'],address:'Helguera 449, Flores',instagram:'https://instagram.com/bandidashoes1',instagramHandle:'@bandidashoes1',web:'https://bandidashoes.com.ar',horario:'Lun–Vie aprox 8–17 hs',minimo:'Mayorista / minorista x menor online',price:'$$',styles:['Moda','Tendencia','Cuero'],note:'Zapatería en Helguera 449. Especialistas en calzado de moda y tendencia. Tel mayorista 11-6500-6573.',score:0},
+  {id:'puntoar',name:'Punto AR Accesorios',category:'Accesorios',subcategory:['Carteras','Bolsos','Anteojos','Varios'],address:'Argerich 632 / Aranguren 3340, CABA',instagram:'https://instagram.com/puntoar_accesorios',instagramHandle:'@puntoar_accesorios',web:'https://puntoar-accesorios.com.ar',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'Por mayor',price:'$$',styles:['Tendencia','Variedad','Completo'],note:'2 locales. 52.5K seguidores TikTok. Especialistas en bolsos, lentes, sombreros y cinturones. Muy completo.',score:0},
+  {id:'byf',name:'ByF Women Accesorios',category:'Accesorios',subcategory:['Carteras','Bolsos','Varios'],address:'Av. Avellaneda 3188',instagram:'https://instagram.com/byfwomen3188',instagramHandle:'@byfwomen3188',web:'https://byfwomen.com.ar',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'$50.000 web',price:'$$',styles:['Accesorios','Bolsos','Tendencia'],note:'Mini bags, bufandas, termos. 13.3K seguidores TikTok con 66M likes. Muy viral. Especialistas en accesorios trendy.',score:0},
+  {id:'filippa',name:'Filippa Moda',category:'Accesorios',subcategory:['Carteras','Bolsos'],address:'Felipe Vallese 3197 / Helguera 407',instagram:'https://instagram.com/filippamoda',instagramHandle:'@filippamoda',web:'',horario:'Lun–Vie aprox 8–17 hs',minimo:'Mayorista',price:'$$',styles:['Cuero 100%','Carteras','Premium'],note:'Carteras y accesorios 100% cuero. Mayorista. Dos locales. Especialistas en carteras de cuero premium.',score:0},
+  {id:'tresher',name:'Tresher Accesorios',category:'Accesorios',subcategory:['Carteras','Bolsos','Varios'],address:'Av. Avellaneda 3039 / 3020 / 3271 / 3310',instagram:'https://instagram.com/tresheraccesorios',instagramHandle:'@tresheraccesorios',web:'',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'Por mayor',price:'$',styles:['Económico','Variedad','Tendencia'],note:'4 locales. 223.7K seguidores TikTok. El paraíso de los accesorios. Desde $5.000. Especialistas en accesorios accesibles y de moda.',score:0},
+  {id:'inquieta',name:'Inquieta Denim',category:'Ropa',subcategory:['Jeans & Denim'],address:'Helguera 493, Flores',instagram:'https://instagram.com/inquieta.denim',instagramHandle:'@inquieta.denim',web:'https://inquietadenim.com',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'Mayorista',price:'$$',styles:['Denim','Jeans','Especialista'],note:'Creando denim desde 2003. 20K seguidores TikTok. Especialistas en jeans en todos los cortes. Calidad premium en denim.',score:0},
+  {id:'isostasia',name:'Isostasia Denim',category:'Ropa',subcategory:['Jeans & Denim'],address:'Flores, CABA',instagram:'https://instagram.com/isostasia.denim',instagramHandle:'@isostasia.denim',web:'https://isostasia.com.ar',horario:'Lun–Vie aprox 8–17 / Sáb 8–13',minimo:'Mayorista',price:'$$',styles:['Denim','Jeans','Premium'],note:'96.6K seguidores TikTok. Industria argentina. Denim de alta calidad con estética muy cuidada. Especialistas en jeans premium.',score:0},
+];
+
+function loadStores(){try{const s=localStorage.getItem(STORE_KEY);if(s)return JSON.parse(s);}catch(e){}return JSON.parse(JSON.stringify(DEFAULT_STORES));}
+function saveStores(s){try{localStorage.setItem(STORE_KEY,JSON.stringify(s));}catch(e){}}
+function loadComments(){try{const c=localStorage.getItem(COMMENTS_KEY);if(c)return JSON.parse(c);}catch(e){}return {};}
+function saveComments(c){try{localStorage.setItem(COMMENTS_KEY,JSON.stringify(c));}catch(e){}}
+function loadPending(){try{const p=localStorage.getItem(PENDING_KEY);if(p)return JSON.parse(p);}catch(e){}return [];}
+function savePending(p){try{localStorage.setItem(PENDING_KEY,JSON.stringify(p));}catch(e){}}
+function loadNotifs(){try{const n=localStorage.getItem(NOTIF_KEY);if(n)return JSON.parse(n);}catch(e){}return [];}
+function saveNotifs(n){try{localStorage.setItem(NOTIF_KEY,JSON.stringify(n));}catch(e){}}
+
+let stores=loadStores();
+let comments=loadComments();
+let pendingStores=loadPending();
+let notifs=loadNotifs();
+let currentCat='Todos';
+let currentSubcat=null;
+let currentModalId=null;
+let selectedCommentScore=null;
+let selectedEditSubcats=[];
+let reviewsShowAll=false;
+let pickerState={};
+
+// ===== HELPERS =====
+function scoreClass(s){
+  if(!s||s===0)return 'score-none';
+  if(s>=7)return 'score-high';
+  if(s>=5)return 'score-mid';
+  return 'score-low';
+}
+function computeScore(id){
+  const s=stores.find(x=>x.id===id);
+  if(!s)return 0;
+  const base=s.score||0;
+  const comms=(comments[id]||[]).filter(c=>c.score>0);
+  if(comms.length===0)return base;
+  const avg=comms.reduce((a,c)=>a+c.score,0)/comms.length;
+  if(base===0)return Math.round(avg*10)/10;
+  return Math.round(((base+avg)/2)*10)/10;
+}
+function priceLabel(p){return{$:'muy accesible',$$:'moderado',$$$:'medio-alto',$$$$:'premium'}[p]||'';}
+function mapsLink(addr){
+  if(!addr)return '#';
+  return 'https://www.google.com/maps/search/'+encodeURIComponent(addr+' Flores CABA Argentina');
+}
+function addNotif(title,sub){
+  notifs.unshift({title,sub,time:new Date().toLocaleTimeString('es-AR',{hour:'2-digit',minute:'2-digit'})});
+  saveNotifs(notifs);
+  updateNotifBadge();
+}
+function updateNotifBadge(){
+  const badge=document.getElementById('notifBadge');
+  if(notifs.length>0){badge.style.display='flex';badge.textContent=Math.min(notifs.length,9);}
+  else{badge.style.display='none';}
+}
+
+// ===== TABS =====
+function switchTab(tab,btn){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById('view-'+tab).classList.add('active');
+  if(tab==='logistica')buildPicker();
+}
+
+// ===== CATEGORY TABS =====
+function buildCatTabs(){
+  const cats=['Todos','Ropa','Calzado','Accesorios','Mochilas & Bolsos'];
+  document.getElementById('catScroll').innerHTML=cats.map(c=>`<div class="cat-pill${c===currentCat?' on':''}" onclick="setCat('${c}')">${c}</div>`).join('');
+}
+function setCat(c){currentCat=c;currentSubcat=null;// Show admin indicator
+if(IS_ADMIN){const ind=document.getElementById('adminIndicator');if(ind)ind.style.display='inline-block';}
+buildCatTabs();buildSubcatFilters();renderCards();}
+function buildSubcatFilters(){
+  const list=subcatsByCategory[currentCat]||[];
+  const el=document.getElementById('subCatRow');
+  if(!list.length){el.innerHTML='';return;}
+  el.innerHTML=list.map(s=>`<div class="chip${currentSubcat===s?' on':''}" onclick="setSub('${s}')">${s}</div>`).join('');
+}
+function setSub(s){currentSubcat=currentSubcat===s?null:s;buildSubcatFilters();renderCards();}
+
+// ===== RENDER CARDS =====
+function renderCards(){
+  const q=document.getElementById('searchBox').value.toLowerCase();
+  const sort=document.getElementById('sortSelect').value;
+  let list=stores.filter(s=>{
+    const mQ=!q||s.name.toLowerCase().includes(q)||(s.address||'').toLowerCase().includes(q)||(s.note||'').toLowerCase().includes(q)||(s.styles||[]).some(t=>t.toLowerCase().includes(q));
+    const mCat=currentCat==='Todos'||s.category===currentCat;
+    const mSub=!currentSubcat||(s.subcategory||[]).includes(currentSubcat);
+    return mQ&&mCat&&mSub;
+  });
+  if(sort==='score')list.sort((a,b)=>computeScore(b.id)-computeScore(a.id));
+  else if(sort==='name')list.sort((a,b)=>a.name.localeCompare(b.name));
+  else if(sort==='price_asc')list.sort((a,b)=>(priceMap[a.price]||0)-(priceMap[b.price]||0));
+  document.getElementById('countLabel').textContent=`${list.length} local${list.length!==1?'es':''}`;
+  const el=document.getElementById('cardsList');
+  if(!list.length){el.innerHTML=`<div class="empty-state"><div class="big">🛍️</div><p>No hay locales con esos filtros.<br>¡Sugerí uno!</p></div>`;return;}
+  el.innerHTML=list.map(s=>{
+    const sc=computeScore(s.id);
+    const comCount=(comments[s.id]||[]).length;
+    const igHandle=s.instagramHandle||s.instagram||'';
+    const igUrl=s.instagram&&s.instagram.startsWith('http')?s.instagram:(s.instagramHandle?'https://instagram.com/'+s.instagramHandle.replace('@',''):'');
+    const mapsUrl=mapsLink(s.address);
+    return `
+    <div class="local-card" onclick="openModal('${s.id}')">
+      <div class="card-header">
+        <div class="card-title-block">
+          <div class="card-name">${s.name}</div>
+          <div class="card-sub">${s.category}${s.subcategory?.length?' · '+s.subcategory.slice(0,2).join(', '):''}</div>
+        </div>
+        <div class="score-ring ${scoreClass(sc)}">${sc>0?sc:'—'}<span>${sc>0?'/10':''}</span></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-price">${s.price} ${priceLabel(s.price)}</span>
+        ${(s.styles||[]).slice(0,3).map(t=>`<span class="tag tag-style">${t}</span>`).join('')}
+        ${s.minimo?`<span class="tag tag-min">Min: ${s.minimo}</span>`:''}
+      </div>
+      <div class="card-info">
+        ${s.address?`<span class="info-item"><span class="ico">📍</span><a href="${mapsUrl}" target="_blank" onclick="event.stopPropagation()">${s.address}</a></span>`:''}
+        ${s.horario?`<span class="info-item"><span class="ico">🕐</span>${s.horario}</span>`:''}
+        ${igHandle?`<span class="info-item"><span class="ico">📷</span><a href="${igUrl}" target="_blank" onclick="event.stopPropagation()">${igHandle}</a></span>`:''}
+        ${s.web?`<span class="info-item"><span class="ico">🌐</span><a href="${s.web}" target="_blank" onclick="event.stopPropagation()">Web</a></span>`:''}
+      </div>
+      <div class="card-footer">
+        <div class="card-note">${s.note||'Sin descripción'}${comCount>0?` · <strong style="color:var(--accent-dark)">${comCount} reseña${comCount>1?'s':''}</strong>`:''}</div>
+        <button class="btn-detail" onclick="event.stopPropagation();openModal('${s.id}')">Ver más →</button>
+      </div>
+    </div>`;
+  }).join('');
+  updateStats();
+}
+
+function updateStats(){
+  document.getElementById('statTotal').textContent=stores.length;
+  document.getElementById('statRopa').textContent=stores.filter(s=>s.category==='Ropa').length;
+  document.getElementById('statZapatos').textContent=stores.filter(s=>s.category==='Calzado').length;
+  document.getElementById('statAcc').textContent=stores.filter(s=>s.category==='Accesorios'||s.category==='Mochilas & Bolsos').length;
+}
+
+// ===== MODAL =====
+function openModal(id){
+  const s=stores.find(x=>x.id===id);
+  if(!s)return;
+  currentModalId=id;selectedCommentScore=null;reviewsShowAll=false;
+  const sc=computeScore(id);
+  document.getElementById('mName').textContent=s.name;
+  document.getElementById('mCat').textContent=s.category+(s.subcategory?.length?' · '+s.subcategory.join(', '):'');
+  const ring=document.getElementById('mScore');
+  ring.innerHTML=sc>0?`${sc}<span>/10</span>`:'<span style="font-size:11px">Sin votos</span>';
+
+  // Links in hero
+  const igUrl=s.instagram&&s.instagram.startsWith('http')?s.instagram:(s.instagramHandle?'https://instagram.com/'+s.instagramHandle.replace('@',''):'');
+  let linksHtml='';
+  if(igUrl)linksHtml+=`<a href="${igUrl}" target="_blank" style="background:rgba(255,255,255,0.15);color:white;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,0.25);backdrop-filter:blur(4px)">📷 Instagram</a>`;
+  if(s.web)linksHtml+=`<a href="${s.web}" target="_blank" style="background:rgba(255,255,255,0.15);color:white;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,0.25);backdrop-filter:blur(4px)">🌐 Web</a>`;
+  document.getElementById('mLinks').innerHTML=linksHtml;
+
+  // Maps
+  const mUrl=mapsLink(s.address);
+  const mMaps=document.getElementById('mMapsLink');
+  mMaps.onclick=()=>window.open(mUrl,'_blank');
+  document.getElementById('mMapsAddr').textContent=s.address||'Sin dirección registrada';
+
+  // Info grid
+  const igHandle=s.instagramHandle||s.instagram||'';
+  document.getElementById('mInfo').innerHTML=`
+    ${s.address?`<div class="detail-item"><div class="detail-label">📍 Dirección</div><div class="detail-value"><a href="${mapsLink(s.address)}" target="_blank">${s.address}</a></div></div>`:''}
+    ${s.horario?`<div class="detail-item"><div class="detail-label">🕐 Horario</div><div class="detail-value">${s.horario}</div></div>`:''}
+    ${s.minimo?`<div class="detail-item"><div class="detail-label">🛒 Mínimo</div><div class="detail-value">${s.minimo}</div></div>`:''}
+    ${s.price?`<div class="detail-item"><div class="detail-label">💵 Precio</div><div class="detail-value">${s.price} — ${priceLabel(s.price)}</div></div>`:''}
+    ${igHandle?`<div class="detail-item"><div class="detail-label">📷 Instagram</div><div class="detail-value"><a href="${igUrl}" target="_blank">${igHandle}</a></div></div>`:''}
+    ${s.web?`<div class="detail-item"><div class="detail-label">🌐 Web</div><div class="detail-value"><a href="${s.web}" target="_blank">${s.web.replace('https://','')}</a></div></div>`:''}
+    ${s.note?`<div class="detail-item full"><div class="detail-label">✦ Qué venden</div><div class="detail-value">${s.note}</div></div>`:''}
+  `;
+  document.getElementById('mTags').innerHTML=(s.styles||[]).map(t=>`<span class="tag tag-style">${t}</span>`).join('')+`<span class="tag tag-price">${s.price}</span>`;
+
+  // Admin edit button
+  document.getElementById('editSection').style.display=IS_ADMIN?'block':'none';
+  closeEdit();
+  showReviewsTab('ver');
+  renderComments(id);
+  buildScorePick();
+  // Reset bought toggle
+  document.getElementById('cBought').value='';
+  document.getElementById('cWhenWrap').style.display='none';
+  document.getElementById('overlay').classList.add('open');
+}
+function closeModal(e){if(e.target.id==='overlay')document.getElementById('overlay').classList.remove('open');}
+
+function openEdit(){
+  const s=stores.find(x=>x.id===currentModalId);if(!s)return;
+  document.getElementById('eAddr').value=s.address||'';
+  document.getElementById('eHorario').value=s.horario||'';
+  document.getElementById('eMinimo').value=s.minimo||'';
+  document.getElementById('ePrice').value=s.price||'$$';
+  document.getElementById('eNota').value=s.note||'';
+  document.getElementById('editSection').style.display='none';
+  document.getElementById('editFormSection').style.display='block';
+}
+function closeEdit(){
+  document.getElementById('editSection').style.display=IS_ADMIN?'block':'none';
+  document.getElementById('editFormSection').style.display='none';
+}
+function saveEdit(){
+  const s=stores.find(x=>x.id===currentModalId);if(!s)return;
+  s.address=document.getElementById('eAddr').value;
+  s.horario=document.getElementById('eHorario').value;
+  s.minimo=document.getElementById('eMinimo').value;
+  s.price=document.getElementById('ePrice').value;
+  s.note=document.getElementById('eNota').value;
+  saveStores(stores);openModal(currentModalId);
+}
+
+// ===== REVIEWS =====
+function showReviewsTab(tab){
+  document.getElementById('rtab-ver').classList.toggle('on',tab==='ver');
+  document.getElementById('rtab-dejar').classList.toggle('on',tab==='dejar');
+  document.getElementById('panel-ver').style.display=tab==='ver'?'block':'none';
+  document.getElementById('panel-dejar').style.display=tab==='dejar'?'block':'none';
+  if(tab==='dejar'){buildScorePick();}
+}
+
+// Toggle "when" field based on bought
+document.getElementById('cBought').addEventListener('change',function(){
+  document.getElementById('cWhenWrap').style.display=this.value==='yes'?'block':'none';
+});
+
+function renderComments(id){
+  const list=(comments[id]||[]).slice().reverse();
+  const el=document.getElementById('mComments');
+  const showMore=document.getElementById('showMoreWrap');
+  if(!list.length){
+    el.innerHTML=`<p style="font-size:13px;color:var(--text-muted);font-style:italic">Todavía no hay reseñas. ¡Sé la primera!</p>`;
+    showMore.style.display='none';return;
+  }
+  const toShow=reviewsShowAll?list:list.slice(0,5);
+  el.innerHTML=toShow.map(c=>{
+    const boughtTag=c.bought==='yes'?`<span class="comment-bought">✅ Compró</span>`:(c.bought==='no'?`<span class="comment-bought" style="background:var(--plum-light);color:var(--plum-deep)">👀 Fue a ver</span>`:'');
+    const priceTag=c.priceOpinion?`<span style="font-size:11px;color:var(--text-muted);margin-left:6px">${c.priceOpinion}</span>`:'';
+    return `
+    <div class="comment-bubble">
+      <div class="comment-meta">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+          <span class="comment-author">${c.author||'Anónima'}</span>
+          ${c.score?`<span class="comment-score">⭐ ${c.score}/10</span>`:''}
+          ${priceTag}
+        </div>
+        <span class="comment-date">${c.date}</span>
+      </div>
+      ${boughtTag}
+      ${c.when?`<div style="font-size:11px;color:var(--text-muted);margin-top:4px">📅 ${c.when}</div>`:''}
+      <div class="comment-text">${c.text}</div>
+    </div>`;
+  }).join('');
+  if(list.length>5&&!reviewsShowAll){
+    showMore.style.display='block';
+  }else{showMore.style.display='none';}
+}
+
+function showAllReviews(){reviewsShowAll=true;renderComments(currentModalId);}
+
+function buildScorePick(){
+  const el=document.getElementById('scorePick');
+  el.innerHTML=[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="score-opt${selectedCommentScore===n?' sel':''}" onclick="pickScore(${n})">${n}</button>`).join('');
+}
+function pickScore(n){selectedCommentScore=n;buildScorePick();}
+
+function submitComment(){
+  const author=document.getElementById('cAuthor').value.trim();
+  const text=document.getElementById('cText').value.trim();
+  if(!author||!text){alert('Completá tu nombre y la reseña.');return;}
+  if(!comments[currentModalId])comments[currentModalId]=[];
+  const now=new Date();
+  const entry={
+    author,text,score:selectedCommentScore||0,
+    date:now.toLocaleDateString('es-AR'),
+    bought:document.getElementById('cBought').value,
+    when:document.getElementById('cBought').value==='yes'?document.getElementById('cWhen').value:'',
+    priceOpinion:document.getElementById('cPriceOpinion').value
+  };
+  comments[currentModalId].push(entry);
+  saveComments(comments);
+  // Notif for admin
+  const storeName=stores.find(x=>x.id===currentModalId)?.name||'un local';
+  addNotif(`💬 Nueva reseña en ${storeName}`,`${author} dejó una reseña con puntaje ${selectedCommentScore||'—'}/10`);
+  document.getElementById('cAuthor').value='';
+  document.getElementById('cText').value='';
+  document.getElementById('cBought').value='';
+  document.getElementById('cPriceOpinion').value='';
+  document.getElementById('cWhenWrap').style.display='none';
+  selectedCommentScore=null;
+  buildScorePick();
+  renderComments(currentModalId);
+  renderCards();
+  showReviewsTab('ver');
+}
+
+// ===== ADD LOCAL =====
+function updateSubcats(){
+  const cat=document.getElementById('addCat').value;
+  const list=subcatsByCategory[cat]||[];
+  selectedEditSubcats=[];
+  document.getElementById('subcatGrid').innerHTML=list.map(s=>`<button class="subcat-check" onclick="toggleSubcat(this,'${s}')">${s}</button>`).join('');
+}
+function toggleSubcat(btn,s){
+  btn.classList.toggle('on');
+  if(btn.classList.contains('on'))selectedEditSubcats.push(s);
+  else selectedEditSubcats=selectedEditSubcats.filter(x=>x!==s);
+}
+function submitLocal(){
+  const name=document.getElementById('addName').value.trim();
+  const nota=document.getElementById('addNota').value.trim();
+  const addr=document.getElementById('addAddr').value.trim();
+  if(!name||!nota||!addr){alert('Por favor completá los campos obligatorios (nombre, descripción y dirección).');return;}
+  const igRaw=document.getElementById('addIg').value.trim();
+  const webRaw=document.getElementById('addWeb').value.trim();
+  const newStore={
+    id:'local_'+Date.now(),
+    name,
+    category:document.getElementById('addCat').value,
+    subcategory:[...selectedEditSubcats],
+    address:addr,
+    instagram:igRaw,
+    instagramHandle:igRaw&&igRaw.includes('instagram.com')?'@'+igRaw.split('instagram.com/')[1]?.split('/')[0]:'',
+    web:webRaw,
+    horario:document.getElementById('addHorario').value.trim(),
+    minimo:document.getElementById('addMinimo').value.trim(),
+    price:document.getElementById('addPrice').value,
+    styles:document.getElementById('addEstilo').value.split(',').map(s=>s.trim()).filter(Boolean),
+    note:nota,
+    score:0
+  };
+  pendingStores.push(newStore);
+  savePending(pendingStores);
+  addNotif(`📥 Nuevo local sugerido: ${name}`,`Categoría: ${document.getElementById('addCat').value} · ${addr}`);
+  // Flash pending panel
+  setTimeout(()=>{
+    const panel=document.getElementById('pendingPanel');
+    if(panel&&panel.style.display!=='none'){
+      panel.style.transition='all 0.3s';
+      panel.style.boxShadow='0 0 0 3px var(--accent)';
+      setTimeout(()=>panel.style.boxShadow='',1500);
+    }
+  },300);
+  ['addName','addAddr','addIg','addWeb','addHorario','addMinimo','addEstilo','addNota'].forEach(id=>{document.getElementById(id).value='';});
+  selectedEditSubcats=[];updateSubcats();
+  const banner=document.getElementById('addSuccess');
+  banner.classList.add('show');
+  setTimeout(()=>banner.classList.remove('show'),5000);
+  if(IS_ADMIN)renderPendingPanel();
+}
+
+// ===== PENDING PANEL =====
+function renderPendingPanel(){
+  const panel=document.getElementById('pendingPanel');
+  const list=document.getElementById('pendingList');
+  if(!IS_ADMIN||!pendingStores.length){panel.style.display='none';return;}
+  panel.style.display='block';
+  list.innerHTML=pendingStores.map((s,i)=>`
+    <div class="pending-item">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
+        <div>
+          <div class="pending-item-name">📥 ${s.name}</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:2px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em">${s.category} · ${s.price||'$$'}</div>
+          <div style="font-size:12px;color:var(--text-soft);margin-top:4px">📍 ${s.address||'Sin dirección'}</div>
+          ${s.instagram?`<div style="font-size:12px;color:var(--accent-dark);margin-top:2px">📷 ${s.instagram}</div>`:''}
+          <div style="font-size:12px;color:var(--text-soft);margin-top:4px;line-height:1.5;font-style:italic">${s.note?'"'+s.note.slice(0,80)+'…"':''}</div>
+        </div>
+      </div>
+      <div class="pending-btns" style="margin-top:10px">
+        <button class="btn-approve" onclick="approveLocal(${i})">✅ Aprobar — publicar</button>
+        <button class="btn-reject" onclick="rejectLocal(${i})">❌ Rechazar</button>
+      </div>
+    </div>`).join('');
+  // Also update notif badge with pending count
+  updateNotifBadge();
+}
+function approveLocal(i){
+  const s=pendingStores[i];
+  stores.push(s);saveStores(stores);
+  pendingStores.splice(i,1);savePending(pendingStores);
+  addNotif(`✅ Local aprobado: ${s.name}`,'Ya aparece en el directorio.');
+  renderCards();renderPendingPanel();
+}
+function rejectLocal(i){
+  const s=pendingStores[i];
+  pendingStores.splice(i,1);savePending(pendingStores);
+  addNotif(`❌ Local rechazado: ${s.name}`,'Fue eliminado de la lista de pendientes.');
+  renderPendingPanel();
+}
+
+// ===== NOTIF PANEL =====
+function openNotif(){
+  const el=document.getElementById('notifList');
+  if(!notifs.length){el.innerHTML='<div class="notif-empty">Sin notificaciones nuevas 🎉</div>';}
+  else{
+    el.innerHTML=notifs.map(n=>`
+      <div class="notif-item">
+        <div class="notif-icon">🔔</div>
+        <div class="notif-content">
+          <div class="notif-title">${n.title}</div>
+          <div class="notif-sub">${n.sub||''}</div>
+        </div>
+        <div class="notif-time">${n.time||''}</div>
+      </div>`).join('');
+  }
+  document.getElementById('notifOverlay').classList.add('open');
+  // Clear badge
+  notifs=[];saveNotifs(notifs);updateNotifBadge();
+}
+function closeNotif(){document.getElementById('notifOverlay').classList.remove('open');}
+
+// ===== LOGÍSTICA =====
+const ZONES={
+  helguera:{name:'Helguera',order:1},
+  cuenca:{name:'Cuenca',order:2},
+  campana:{name:'Campana',order:3},
+  aranguren:{name:'Aranguren',order:4},
+  avellaneda:{name:'Av. Avellaneda',order:5},
+  argerich:{name:'Argerich',order:6},
+  vallese:{name:'Felipe Vallese',order:6},
+  moron:{name:'Morón',order:7},
+  other:{name:'Otra zona',order:8}
+};
+function getZone(addr){
+  const a=(addr||'').toLowerCase();
+  if(a.includes('helguera'))return 'helguera';
+  if(a.includes('cuenca'))return 'cuenca';
+  if(a.includes('campana'))return 'campana';
+  if(a.includes('aranguren'))return 'aranguren';
+  if(a.includes('avellaneda'))return 'avellaneda';
+  if(a.includes('argerich'))return 'argerich';
+  if(a.includes('vallese'))return 'vallese';
+  if(a.includes('mor'))return 'moron';
+  return 'other';
+}
+
+function filterPicker(){
+  const q=document.getElementById('pickerSearch').value.toLowerCase();
+  document.querySelectorAll('.local-picker-item').forEach(el=>{
+    const name=el.querySelector('.picker-name').textContent.toLowerCase();
+    el.style.display=(!q||name.includes(q))?'flex':'none';
+  });
+}
+
+function buildPicker(){
+  const minxlocal=parseInt(document.getElementById('logMinxlocal')?.value)||40;
+  const el=document.getElementById('localPicker');
+  el.innerHTML=stores.map(s=>{
+    const state=pickerState[s.id]||'off';
+    const priClass=state==='must'?'pri-must':state==='ifgo'?'pri-ifgo':'pri-off';
+    const priLabel=state==='must'?'SÍ O SÍ':state==='ifgo'?'Si llego':'+ Agregar';
+    return `
+    <div class="local-picker-item" onclick="togglePicker('${s.id}')">
+      <div style="flex:1">
+        <div class="picker-name">${s.name}</div>
+        <div class="picker-addr">${s.address||s.category}</div>
+      </div>
+      <span class="picker-time">${minxlocal}–${Math.round(minxlocal*1.5)} min</span>
+      <span class="picker-priority ${priClass}">${priLabel}</span>
+    </div>`;
+  }).join('');
+}
+
+function togglePicker(id){
+  const cur=pickerState[id]||'off';
+  pickerState[id]=cur==='off'?'must':cur==='must'?'ifgo':'off';
+  buildPicker();
+}
+
+function buildRoute(){
+  const hora=document.getElementById('logHora').value||'09:00';
+  const tiempo=parseInt(document.getElementById('logTiempo').value)||3;
+  const minxlocal=parseInt(document.getElementById('logMinxlocal').value)||40;
+  const fecha=document.getElementById('logFecha').value;
+  const must=stores.filter(s=>pickerState[s.id]==='must');
+  const ifgo=stores.filter(s=>pickerState[s.id]==='ifgo');
+  if(!must.length&&!ifgo.length){alert('Seleccioná al menos un local.');return;}
+  const sorted=(arr)=>[...arr].sort((a,b)=>ZONES[getZone(a.address)].order-ZONES[getZone(b.address)].order);
+  const mustSorted=sorted(must);
+  const ifgoSorted=sorted(ifgo);
+  const [hStr,mStr]=hora.split(':');
+  let h=parseInt(hStr),m=parseInt(mStr);
+  const fmt=(hh,mm)=>{mm=mm%60;hh=hh+Math.floor(mm/60);return `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')} hs`;};
+  const timeLeft=tiempo*60;
+  let steps=[];let minUsed=0;
+  mustSorted.forEach(s=>{
+    steps.push({s,type:'must',startH:h,startM:m,dur:minxlocal});
+    m+=minxlocal+5;if(m>=60){h+=Math.floor(m/60);m=m%60;}minUsed+=minxlocal+5;
+  });
+  ifgoSorted.forEach(s=>{
+    if(minUsed+minxlocal<=timeLeft){
+      steps.push({s,type:'ifgo',startH:h,startM:m,dur:minxlocal});
+      m+=minxlocal+5;if(m>=60){h+=Math.floor(m/60);m=m%60;}minUsed+=minxlocal+5;
+    }
+  });
+  const fechaLabel=fecha?new Date(fecha+'T12:00:00').toLocaleDateString('es-AR',{weekday:'long',day:'numeric',month:'long'}):'(sin fecha seleccionada)';
+  const panel=document.getElementById('routePanel');
+  panel.innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">
+      <h3>Tu ruta para tus compras ✦</h3>
+      <button style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--text-muted)" onclick="closeRoutePanel()">✕</button>
+    </div>
+    <div class="route-date">${steps.length} parada${steps.length!==1?'s':''} · ~${minUsed} min totales</div>
+    ${steps.map((st,i)=>`
+    <div class="route-step">
+      <div class="step-num">${i+1}</div>
+      <div style="flex:1">
+        <div class="step-name">${st.s.name}</div>
+        <div class="step-addr">${st.s.address||'Sin dirección'}</div>
+        <div class="step-time">⏰ Llegás aprox. ${fmt(st.startH,st.startM)} · ~${st.dur} min</div>
+      </div>
+      <span class="step-badge ${st.type==='must'?'step-must':'step-if'}">${st.type==='must'?'Sí o sí':'Si llegás'}</span>
+    </div>`).join('')}
+    <div class="route-tip">💡 <strong>Tip:</strong> La mayoría de los locales en Flores cierran entre las 17–17:30. Los sábados por la mañana podés comprar al por menor sin mínimo en muchos lugares. Llevá efectivo y tarjeta.</div>
+    <button class="btn-download-route" onclick="downloadRoutePDF()" style="background:linear-gradient(135deg,#2d1b4e,#6b2fa0);color:white;border:none;border-radius:var(--r-sm);padding:13px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;cursor:pointer;width:100%;margin-bottom:10px;box-shadow:0 4px 14px rgba(139,36,179,0.3);">⬇️ Descargá tu ruta para llevarla a mano</button>
+    <button class="btn-close-route" onclick="closeRoutePanel()">Cerrar</button>
+  `;
+  document.getElementById('routeOverlay').classList.add('open');
+}
+function closeRoutePanel(){document.getElementById('routeOverlay').classList.remove('open');}
+
+function downloadRoutePDF(){
+  const panel=document.getElementById('routePanel');
+  const style=`<style>
+    body{font-family:'Montserrat',sans-serif;color:#1a1423;max-width:600px;margin:0 auto;padding:20px}
+    h2{color:#4a2070;font-size:22px;margin-bottom:4px}
+    .step{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #e0d8f0;align-items:flex-start}
+    .num{background:#6b2fa0;color:white;border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;font-size:13px}
+    .name{font-weight:700;font-size:15px;color:#1a1423}
+    .addr{font-size:12px;color:#857d8f;margin-top:2px}
+    .time{font-size:11px;color:#6b2fa0;margin-top:4px}
+    .badge{display:inline-block;padding:2px 10px;border-radius:20px;font-size:11px;font-weight:700;margin-left:8px}
+    .must{background:#f3e0ff;color:#8b24b3}
+    .ifgo{background:#fef3c7;color:#d97706}
+    .tip{background:#f5f0ff;border-radius:10px;padding:14px;font-size:12px;color:#5c5368;margin-top:16px;line-height:1.6}
+    .footer{text-align:center;font-size:11px;color:#857d8f;margin-top:20px}
+  </style>`;
+  const content=`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Tu ruta de compras</title>${style}</head><body>
+    <h2>Tu ruta para tus compras</h2>
+    <p style="font-size:13px;color:#857d8f;margin-bottom:16px">Flores & Avellaneda — Guía de Shopping</p>
+    ${panel.querySelector ? Array.from(panel.querySelectorAll('.route-step')).map((el,i)=>{
+      const name=el.querySelector('.step-name')?.textContent||'';
+      const addr=el.querySelector('.step-addr')?.textContent||'';
+      const time=el.querySelector('.step-time')?.textContent||'';
+      const badge=el.querySelector('.step-badge');
+      const isMust=badge?.classList.contains('step-must');
+      return `<div class="step"><div class="num">${i+1}</div><div><div class="name">${name}<span class="badge ${isMust?'must':'ifgo'}">${isMust?'Sí o sí':'Si llegás'}</span></div><div class="addr">${addr}</div><div class="time">${time}</div></div></div>`;
+    }).join('') : ''}
+    <div class="tip">💡 La mayoría de los locales cierran entre las 17–17:30. Los sábados por la mañana podés comprar al por menor sin mínimo. Llevá efectivo y tarjeta.</div>
+    <div class="footer">Guardá esta página · flores-avellaneda.guia</div>
+  </body></html>`;
+  const blob=new Blob([content],{type:'text/html'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;a.download='mi-ruta-de-compras.html';a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ===== INIT =====
+document.getElementById('logMinxlocal').addEventListener('change',buildPicker);
+// Set today's date as default
+const today=new Date().toISOString().split('T')[0];
+document.getElementById('logFecha').value=today;
+
+// Show admin indicator
+if(IS_ADMIN){const ind=document.getElementById('adminIndicator');if(ind)ind.style.display='inline-block';}
+buildCatTabs();
+buildSubcatFilters();
+updateSubcats();
+renderCards();
+renderPendingPanel();
+updateNotifBadge();
+</script>
+
+
+<div id="adminToast" style="position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: rgb(45, 27, 78); color: white; padding: 10px 20px; border-radius: 30px; font-family: Montserrat, sans-serif; font-size: 13px; font-weight: 600; z-index: 9999; opacity: 0; transition: opacity 0.3s; pointer-events: none;">✏️ Modo edición activado</div></body></html>
